@@ -1,0 +1,25 @@
+.page-intro{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.policy-image{
+    width: 100%;
+}
+
+.page-intro .swiper-slide{
+    margin-bottom: 2rem;
+}
+
+.page-intro .swiper{
+    margin:2rem auto;
+}
+
+.content{
+    max-width: 800px;
+    margin: auto;
+}
+
+.content p{
+    margin: 2rem 0rem;
+}

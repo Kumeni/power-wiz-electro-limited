@@ -1,0 +1,30 @@
+.content-right, .content-left{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+}
+
+.content-right, .content-left{
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+    align-items: center;
+}
+
+.underline{
+    width:100px;
+    height: 2px;
+    background-color: gold;
+    margin: 1rem 0rem;
+}
+
+.content-right > div:first-of-type img, .content-left > div:first-of-type img{
+    width:100%;
+}
+
+.section-content{
+    position:relative;
+}
+
+.content-left > div:first-of-type{
+    grid-area:1/2/span 1/ span 1;
+}

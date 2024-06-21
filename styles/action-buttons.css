@@ -1,0 +1,11 @@
+.action-buttons{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+}
+
+.action-buttons{
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    margin:2rem auto;
+}

@@ -1,0 +1,24 @@
+.partners{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+}
+.our-partners-title{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 1rem auto;
+}
+.partners{
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+.partners > a{
+    display: block;
+    justify-self: center;
+    box-shadow: 1px 1px 3px rgb(120, 120, 120);
+    padding: 1rem;
+    border-radius: 5px;
+}

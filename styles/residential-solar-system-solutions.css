@@ -1,0 +1,75 @@
+.point{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+}
+
+.landing{
+    width: 80%;
+    margin: auto;
+    column-gap: 2rem;
+}
+
+.landing-image{
+    width: 100%;
+    max-width:600px;
+    margin-left: auto;
+    display: block;
+}
+
+.about-residential-solar-systems{
+    width: 80%;
+    margin: 0rem auto 0rem auto;
+    column-gap: 2rem;
+}
+
+.service-title{
+    /* border:1px solid black; */
+    width:70%;
+    margin:4rem auto 2rem auto;
+}
+
+.completed-projects-title{
+    margin-top: 4rem;
+}
+
+.completed-projects-title > h2{
+    text-align: center;
+}
+
+.completed-projects-title .underline{
+    margin: 1rem auto !important;
+}
+
+.article{
+    width:60%;
+    margin: auto;
+}
+
+.point{
+    grid-template-columns: max-content auto;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin:2rem auto;
+}
+
+.point > img{
+    width: 50px;
+}
+
+.article strong{
+    font-weight: 500;
+}
+
+.completed-projects{
+    max-width:1000px;
+    margin:0rem auto 4rem auto;
+}
+
+.project-image{
+    /* height:300px; */
+    width: 100%;
+    border:1px solid rgb(210, 210, 210);
+    border-radius:5px;
+    margin-bottom:3rem;
+}
