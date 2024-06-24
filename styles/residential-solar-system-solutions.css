@@ -9,6 +9,12 @@
     margin: auto;
     column-gap: 2rem;
 }
+@media (max-width: 375px){
+    .landing{
+        width: 100%;
+        padding: 1rem;
+    }
+}
 
 .landing-image{
     width: 100%;
@@ -21,6 +27,12 @@
     width: 80%;
     margin: 0rem auto 0rem auto;
     column-gap: 2rem;
+}
+@media (max-width: 375px){
+    .about-residential-solar-systems{
+        width: 100%;
+        padding: 1rem;
+    }
 }
 
 .service-title{
@@ -45,7 +57,17 @@
     width:60%;
     margin: auto;
 }
-
+@media (max-width: 900px){
+    .article{
+        width:80%;
+    }
+}
+@media (max-width: 519px){
+    .article{
+        width:100%;
+        padding:1rem;
+    }
+}
 .point{
     grid-template-columns: max-content auto;
     align-items: center;
