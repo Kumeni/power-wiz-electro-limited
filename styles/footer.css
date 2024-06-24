@@ -39,10 +39,22 @@
 .footer-content{
     grid-template-columns:repeat(4, auto);
     column-gap: 4rem;
+    row-gap:2rem;
     margin: 2rem 4rem;
 }
-
-
+@media (max-width:1066px){
+    .footer-content{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+@media (max-width: 690px){
+    .footer-content{
+        grid-template-columns: auto;
+        row-gap: 1rem;
+        padding: 1rem 1rem;
+        margin: 2rem 0rem;
+    }
+}
 .company-contacts{
     grid-template-columns: max-content auto;
     grid-template-rows: repeat(3, max-content);

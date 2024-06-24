@@ -5,10 +5,15 @@
 }
 .homepage-landing{
     grid-template-columns: 55% 45% !important;
-    column-gap:2rem;
+    column-gap:1rem;
+    /* border: 1px solid black; */
 }
+
 .homepage-landing > div:last-of-type{
     padding-right: 2rem;
+}
+.homepage-landing > div:first-of-type{
+    /* border:2px solid green; */
 }
 .homepage-landing .section-content p{
     font-weight: 500;
@@ -23,23 +28,63 @@
     position: relative;
     left: -10rem;
     z-index:-1;
+    /* border:2px solid black; */
 }
 @media (min-width: 1440px){
     .landing-image{
-        width: 900px !important;
+        width: 120% !important;
+        left: -8rem;
     }
 }
 @media (max-width: 1440px){
     .landing-image{
-        width: 850px !important;
+        width: 120% !important;
+    }
+}
+@media (max-width:1200px){
+    .landing-image{
+        width: 120% !important;
+        left: -6rem;
+        z-index:1;
+    }
+}
+@media(max-width:876px){
+    .landing-image{
+        margin-top:0rem;
+        width:130% !important;
+        left:-8rem;
+    }
+}
+@media (max-width: 768px){
+    .landing-image{
+        width:130% !important;
+        left:-23%;
+    }
+    .homepage-landing{
+        grid-template-columns: auto !important;
     }
 }
 .landing-vector{
-    width:150px;
-    height: 150px;
+    width:40%;
+    max-width:150px;
+    height: auto;
     position: absolute;
     top:-50%;
     right: 2rem;
+}
+@media(max-width: 1138px){
+    .landing-vector{
+        /* width:50%; */
+        top:-70%;
+        right:0%;
+    }
+}
+@media (max-width: 956px){
+    .landing-vector{
+        top:-30%;
+        z-index:-1;
+        opacity:0.6;
+    }
 }
 .about-power-wiz{
     grid-template-columns: 45% 55%;
@@ -47,23 +92,60 @@
     margin:-10rem auto 0rem auto;
     column-gap:2rem;
 }
+@media (max-width: 1192px){
+    .about-power-wiz{
+        margin: -5rem auto 0rem auto;
+    }
+}
+@media (max-width: 926px){
+    .about-power-wiz{
+        margin: 0rem auto 0rem auto;
+    }
+}
+.telecommunication-maintenance-image{
+    width:100%;
+    display: block;
+}
 .gears-vector{
     width:500px;
     position: absolute;
     top:-180%;
     left: 5%;
     z-index: -1;
+    opacity:0.4;
+}
+@media(max-width: 1082px){
+    .gears-vector{
+        width:100%;
+        top:-20%;
+    }
 }
 .our-services-title{
     margin-left:25rem;
     margin-bottom:4rem;
 }
+
+@media(max-width: 1282px){
+    .our-services-title{
+        margin-left: 25%;
+    }
+}
 .solar-panel-vector{
     width:400px;
     position: absolute;
-    top:-100%;
+    top:-90%;
     left:5%;
     z-index:-1;
+}
+@media(max-width:1154px){
+    .solar-panel-vector{
+        width:80%;
+    }
+}
+@media (max-width:1096px){
+    .solar-panel-vector{
+        top:-10%;
+    }
 }
 .residential-solar-panels{
     width:80%;
@@ -86,6 +168,12 @@
     left:20%;
     z-index:-1;
 }
+@media (max-width:1248px){
+    .commercial-solar-panel-vector{
+        width: 90%;
+        left:0%;
+    }
+}
 .telecommunication-equipment{
     grid-template-columns: 45% 55%;
     width:80%;
@@ -99,8 +187,16 @@
     width:150px;
     position: absolute;
     top:-20%;
-    left:0%;
+    left:20%;
     z-index:-1;
+}
+@media (max-width: 960px){
+    .booster-vector{
+        width:unset;
+        height: 100%;
+        top:0%;
+        left:40%
+    }
 }
 .fiber-optics-works{
     width:80%;
@@ -108,7 +204,7 @@
     column-gap:2rem;
 }
 .fiber-optics-vector{
-    width:200px;
+    width:50%;
     position: absolute;
     top: 0;
     left:20%;
@@ -124,8 +220,13 @@
     display: block;
     margin-left: auto;
 }
+@media(max-width:1135px){
+    .diesel-generator-image{
+        width:100% !important;
+    }
+}
 .generator-vector{
-    width:400px;
+    width:70%;
     position: absolute;
     top:0%;
     right: 10%;
@@ -138,6 +239,11 @@
 .power-grid-image{
     width: 500px !important;
     margin-right: auto;
+}
+@media(max-width: 1135px){
+    .power-grid-image{
+        width: 100% !important;
+    }
 }
 .transmission-line-vector{
     width:400px;
@@ -155,6 +261,11 @@
     width: 500px !important;
     margin-left: auto;
     display: block;
+}
+@media(max-width: 1148px){
+    .electrical-works-image{
+        width:100% !important;
+    }
 }
 .full-turnkey-civil-works{
     width: 80%;
@@ -193,6 +304,22 @@
     margin: auto;
     column-gap:2rem;
 }
+@media(max-width:1024px){
+    .our-core-values{
+        width: 80%;
+    }
+}
+@media (max-width: 804px){
+    .our-core-values{
+        grid-template-columns: repeat(2, auto);
+        row-gap: 2rem;
+    }
+}
+@media (max-width: 576px){
+    .our-core-values{
+        grid-template-columns: auto;
+    }
+}
 .our-core-values h3{
     margin: 2rem auto;
     font-size:1rem;
@@ -206,7 +333,8 @@
     margin: auto;
 }
 .construction-machinery{
-    width: 700px;
+    width: 70%;
+    max-width: 700px;
     margin: 3rem auto;
     display: block;
 }

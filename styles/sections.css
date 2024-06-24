@@ -28,3 +28,12 @@
 .content-left > div:first-of-type{
     grid-area:1/2/span 1/ span 1;
 }
+@media( max-width: 768px){
+    .content-right, .content-left{
+        grid-template-columns: auto !important;
+        row-gap: 1rem;
+    }
+    .content-left > div:first-of-type{
+        grid-area:unset;
+    }
+}

@@ -1,0 +1,42 @@
+.project-images{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+}
+
+.our-projects-title{
+    text-align: center;
+    margin: 2rem auto 2rem auto;
+}
+.filters{
+    margin: 1rem auto;
+}
+.filters button{
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    transition: box-shadow 1s;
+}
+
+.filters button:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgb(180, 180, 180);
+}
+.filters .active{
+    box-shadow: 2px 2px 4px rgb(180, 180, 180);
+}
+.content{
+    max-width: 1200px;
+    margin: auto;
+}
+.project-images{
+    grid-template-columns: repeat(4, auto);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.project-images img{
+    width: 100%;
+}
