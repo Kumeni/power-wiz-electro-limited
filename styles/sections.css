@@ -38,3 +38,12 @@
         grid-area:unset;
     }
 }
+
+.content-left > div:first-of-type, .content-right > div:first-of-type{
+    position:relative;
+    z-index:0;
+}
+
+.content-left .section-content img, .content-right .section-content img{
+    z-index: 1 !important;
+}
