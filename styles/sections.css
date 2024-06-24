@@ -32,6 +32,7 @@
     .content-right, .content-left{
         grid-template-columns: auto !important;
         row-gap: 1rem;
+        margin-bottom: 3rem !important;
     }
     .content-left > div:first-of-type{
         grid-area:unset;
