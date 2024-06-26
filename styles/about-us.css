@@ -1,0 +1,34 @@
+main{
+    margin: auto;
+    width: 100%;
+}
+.article{
+    margin-top: 4rem;
+}
+.about-us-content{
+    max-width: 1200px;
+    /* column-gap: 2rem; */
+    margin: auto;
+    padding: 0.5rem;
+}
+@media (max-width: 1198px){
+    .about-us-landing{
+        grid-template-columns: auto !important;
+    }
+}
+.about-us-landing{
+    max-width: 1200px;
+    /* column-gap: 0.4rem; */
+    margin: auto;
+    padding: 0.5rem;
+}
+.about-us-landing img{
+    display: block;
+    width: 140% !important;
+}
+@media (max-width: 425px){
+    .about-us-landing img{
+        position: relative;
+        left: -7rem;
+    }
+}

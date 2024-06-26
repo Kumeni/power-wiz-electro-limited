@@ -30,13 +30,25 @@
 .content{
     max-width: 1200px;
     margin: auto;
+    padding: 0.5rem;
 }
 .project-images{
-    grid-template-columns: repeat(4, auto);
-    column-gap: 2rem;
-    row-gap: 2rem;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 1rem;
+    row-gap: 1rem;
 }
-
+@media (max-width: 768px){
+    .project-images{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+@media (max-width: 425px){
+    .project-images{
+        grid-template-columns: auto;
+    }
+}
 .project-images img{
     width: 100%;
+    box-shadow: 2px 2px 4px rgb(180, 180, 180);
+    border-radius: 5px;
 }

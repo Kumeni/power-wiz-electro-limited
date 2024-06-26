@@ -14,6 +14,22 @@
     align-items: center;
     column-gap: 1rem;
     row-gap: 1rem;
+    padding: 0.5rem;
+}
+@media (max-width: 1358px){
+    .partners{
+        grid-template-columns: repeat(3, auto);
+    }
+}
+@media (max-width: 1078px){
+    .partners{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+@media (max-width: 425px){
+    .partners{
+        grid-template-columns: auto;
+    }
 }
 .partners > a{
     display: block;
@@ -21,4 +37,7 @@
     box-shadow: 1px 1px 3px rgb(120, 120, 120);
     padding: 1rem;
     border-radius: 5px;
+}
+.partners a img{
+    width: 100%;
 }

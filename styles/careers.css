@@ -7,6 +7,7 @@
 .careers-content{
     max-width: 1000px;
     margin: 3rem auto;
+    padding: 1rem;
 }
 
 .careers-content > p{
@@ -20,9 +21,16 @@
     column-gap: 1rem;
     row-gap: 1rem;
 }
-
+@media (max-width: 700px){
+    .application-form{
+        grid-template-columns: auto;
+        justify-content: unset;
+    }
+}
 .application-form input:not([type="submit"]){
-    padding:0.5rem 1.5rem;
+    width: 90vw;
+    max-width: 400px;
+    padding:1rem 1.5rem;
     border:1px solid gold;
     border-radius: 5px;
 }
@@ -32,10 +40,13 @@
 }
 
 .application-form textarea{
-    width: 400px;
+    display: block;
+    width: 90vw;
+    max-width: 400px;
     padding: 0.5rem 1.5rem;
     min-height: 100px;
     border:1px solid gold;
+    border-radius: 5px;
 }
 
 .application-form input:focus, .contact-us-form textarea:focus{
