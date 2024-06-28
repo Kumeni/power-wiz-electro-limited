@@ -113,8 +113,6 @@ nav{
     /* white-space: nowrap; */
     position: relative;
     height: 0px;
-    padding-right:0.5rem;
-    padding-bottom: 3rem;
 }
 
 .hamburger-menu > ul{
