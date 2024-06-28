@@ -110,23 +110,30 @@ nav{
     /* min-height: 100vh; */
     background-color: white;
     width: 0%;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     position: relative;
     height: 0px;
+    padding-right:0.5rem;
+    padding-bottom: 3rem;
 }
 
-.hamburger-menu ul{
+.hamburger-menu > ul{
     position: absolute !important;
     top: 0px;
     left:-3px;
-    min-height:100vh;
+    height:100vh;
     transition: width 0.5s;
-    overflow: hidden;
+    overflow: auto;
     background-color: rgba(255, 255, 255, 0.8);
     width:0vw;
 }
-
-.hamburger-menu a{
+.hamburger-menu > ul ul{
+    margin-left: 1rem;
+}
+.hamburger-menu > ul > li{
+    margin: 1rem 0rem 2rem 0rem;
+}
+.hamburger-menu a, .hamburger-menu span{
     display: block;
     padding: 0.8rem 0.2rem;
     color: black;
@@ -134,7 +141,10 @@ nav{
     font-weight:500;
     margin-left: 1rem;
 }
-
+.hamburger-menu .underline{
+    width: 40px !important;
+    margin-left: 1rem;
+}
 .small-screen-menu-bars{
     display: none;
 }

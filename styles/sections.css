@@ -37,6 +37,10 @@
     .content-left > div:first-of-type{
         grid-area:unset;
     }
+    .content-left, .content-right{
+        width: 100% !important;
+        padding: 1rem;
+    }
 }
 
 .content-left > div:first-of-type, .content-right > div:first-of-type{

@@ -7,9 +7,12 @@ main{
 }
 .about-us-content{
     max-width: 1200px;
-    /* column-gap: 2rem; */
+    column-gap: 2rem;
     margin: auto;
     padding: 0.5rem;
+}
+.about-us-content p{
+    margin: 1rem 0rem;
 }
 @media (max-width: 1198px){
     .about-us-landing{
@@ -21,6 +24,7 @@ main{
     /* column-gap: 0.4rem; */
     margin: auto;
     padding: 0.5rem;
+    column-gap: 2rem;
 }
 .about-us-landing img{
     display: block;
