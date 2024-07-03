@@ -183,29 +183,37 @@
                 <h2>YOUR REQUEST</h2>
                 <div class="underline"></div>
             </div>
-            <form class="contact-us-form">
-                <label>Name*</label>
-                <div>
-                    <input type="text" />
-                    <span></span>
+            <div>
+                <form class="contact-us-form" onsubmit="sendMessage(event)">
+                    <label>Name*</label>
+                    <div>
+                        <input onchange="handleNameChange(event)" name="username"type="text" />
+                        <span id="name-error"></span>
+                    </div>
+                    <label>Email*</label>
+                    <div>
+                        <input onchange="handleEmailChange(event)" name="email" type="email" />
+                        <span id="email-error"></span>
+                    </div>
+                    <label>Subject*</label>
+                    <div>
+                        <input onchange="handleSubjectChange(event)" name="subject" type="text" id="subject"/>
+                        <span id="subject-error"></span>
+                    </div>
+                    <label>Message*</label>
+                    <div>
+                        <textarea  onchange="handleMessageChange(event)" name="message" id="message"></textarea>
+                        <span id="message-error"></span>
+                    </div>
+                    <input class="submit-button" type="submit" value="SUBMIT" />
+                </form>
+                <div id="success-message" style="display: none;">
+                    <p>Message sent Successfully!</p>
+                    <button onclick="showContactForm()">SEND ANOTHER</button>
                 </div>
-                <label>Email*</label>
-                <div>
-                    <input type="email" />
-                    <span></span>
-                </div>
-                <label>Subject*</label>
-                <div>
-                    <input type="text" id="subject"/>
-                    <span></span>
-                </div>
-                <label>Message*</label>
-                <div>
-                    <textarea id="message"></textarea>
-                    <span></span>
-                </div>
-                <input type="submit" value="SUBMIT" />
-            </form>
+
+            </div>
+            
         </section>
         <div id="map"></div>
     </main>

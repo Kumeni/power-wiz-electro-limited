@@ -1,4 +1,4 @@
-.company-contact-information, .contact-us-form{
+.company-contact-information, .contact-us-form, #success-message{
     display: grid;
     display: -ms-grid;
     display: -moz-grid;
@@ -83,7 +83,47 @@
     min-height: 100px;
     border:1px solid gold;
 }
-
+.contact-us-form span{
+    color: red;
+}
 .contact-us-form input:focus, .contact-us-form textarea:focus{
     outline-style: none;
+}
+
+#success-message{
+    box-shadow: 1px 1px 3px 3px rgb(210, 210, 210);
+    padding:2rem 1rem;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    row-gap: 1rem;
+    margin: 2rem 0rem;
+    border-radius: 5px;
+}
+#success-message p{
+    color: #28a745;
+}
+#success-message button{
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #00aeef;
+    color: white;
+}
+
+#success-message button:hover{
+    cursor: pointer;
+    background-color: #0094ca;
+}
+
+.submit-button{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit-button:hover{
+    background-color: #25963f;
+    cursor: pointer;
 }
