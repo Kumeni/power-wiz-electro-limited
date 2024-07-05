@@ -168,33 +168,33 @@
             <form class="application-form">
                 <label>Carriculumn Vitae/Resume<span class="required">*</span></label>
                 <div>
-                    <input type="file"><br/>
-                    <span></span>
+                    <input onchange="handleResumeChange(event)" name="carriculumn-vitae" type="file"><br/>
+                    <span id="carriculumn-vitae-error"></span>
                 </div>
                 <label>Application Letter<span class="required">*</span></label>
                 <div>
-                    <input type="file"><br/>
-                    <span></span>
+                    <input onchange="handleApplicationLetterChange(event)" name="application-letter" type="file"><br/>
+                    <span id="application-letter-error"></span>
                 </div>
                 <label>Name<span class="required">*</span></label>
                 <div>
-                    <input type="text"><br/>
-                    <span></span>
+                    <input onchange="handleNameChange(event)" name="username" type="text"><br/>
+                    <span id="name-error"></span>
                 </div>
                 <label>Email<span class="required">*</span></label>
                 <div>
-                    <input type="text"><br/>
-                    <span></span>
+                    <input onchange="handleEmailChange(event)" name="email" type="text"><br/>
+                    <span id="email-error"></span>
                 </div>
                 <label>Subject<span class="required">*</span></label>
                 <div>
-                    <input type="text"><br/>
-                    <span></span>
+                    <input onchange="handleSubjectChange(event)" name="subject" type="text"><br/>
+                    <span id="subject-error"></span>
                 </div>
                 <label>Message<span class="required">*</span></label>
                 <div>
-                    <textarea></textarea>
-                    <span></span>
+                    <textarea onchange="handleMessageChange(event)" name="message"></textarea>
+                    <span id="message-error"></span>
                 </div>
 
                 <input type="SUBMIT" />
