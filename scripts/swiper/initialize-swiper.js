@@ -30,7 +30,11 @@ let swiper = new Swiper('.swiper', {
     },
 
     // Responsive breakpoints
-    /*breakpoints: {
+    breakpoints: {
+        //when window width is <=425px
+        0:{
+          slidesPerView:1,
+        },
         // when window width is >= 580px
         580: {
             slidesPerView: 2,
@@ -41,5 +45,5 @@ let swiper = new Swiper('.swiper', {
             slidesPerView: 3,
             spaceBetween: 30
         },
-    }*/
+    }
 });

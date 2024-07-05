@@ -28,6 +28,7 @@
     margin: 0rem auto 0rem auto;
     column-gap: 2rem;
 }
+
 @media (max-width: 375px){
     .about-residential-solar-systems{
         width: 100%;
@@ -41,6 +42,9 @@
     margin:4rem auto 2rem auto;
 }
 
+.completed-projects{
+    padding: 0.5rem;
+}
 .completed-projects-title{
     margin-top: 4rem;
 }
@@ -92,6 +96,7 @@
     /* height:300px; */
     width: 100%;
     border:1px solid rgb(210, 210, 210);
-    border-radius:5px;
+    border-radius:10px;
     margin-bottom:3rem;
+    height:auto;
 }
