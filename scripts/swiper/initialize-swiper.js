@@ -7,7 +7,7 @@ let swiper = new Swiper('.swiper', {
     loop: true,
     
     // If we need pagination
-    allowTouchMove:false,
+    allowTouchMove:true,
     pagination: {
       el: '.swiper-pagination',
       clickable:true,
