@@ -1,0 +1,111 @@
+[
+    {
+        "id":1,
+        "name":"Commercial Solar System Solutions",
+        "root": "commercial-solar-systems",
+        "images":[
+            {
+                "src":"WhatsApp Image 2024-06-10 at 09.29.31.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-10 at 09.29.32.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-10 at 09.29.33.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-10 at 09.29.34.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-10 at 09.29.35.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-10 at 09.29.36.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-10 at 09.29.37.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-10 at 09.29.38.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-10 at 09.29.39.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-10 at 09.29.40.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-10 at 09.29.41.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-10 at 09.29.42.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-10 at 09.29.43.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-10 at 09.29.53.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-10 at 09.29.54.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-10 at 09.29.55.jpeg"
+            }
+        ]
+    },
+    {
+        "id":2,
+        "name":"Electrical And Mechanical Works",
+        "root": "electrical-and-mechanical-works",
+        "images":[
+            {
+                "src":"civil works without grid.png"
+            },
+            {
+                "src":"diesel generator without grid.png"
+            },
+            {
+                "src":"electrical works without grid.png"
+            }
+        ]
+    },
+    {
+        "id":3,
+        "name":"Residential Solar System Solutions",
+        "root": "residential_solar_systems",
+        "images":[
+            {
+                "src":"residential solar panels by power-wiz electro limited without grid 1.png"
+            },
+            {
+                "src":"residential solar panels by power-wiz electro limited without grid.png"
+            },
+            {
+                "src":"residential solar-panels battery system by power-wiz electro limited without grid.png"
+            }
+        ]
+    },
+    {
+        "id":4,
+        "name":"Telecommunication Equipment Installation and Maintenance",
+        "root": "telecommunication-projects",
+        "images":[
+            {
+                "src":"WhatsApp Image 2024-06-04 at 10.00.00.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-04 at 10.03.09.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-04 at 10.03.12.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-04 at 10.03.17.jpeg"
+            },
+            {
+                "src":"WhatsApp Image 2024-06-10 at 09.29.38 (1).jpeg"
+            }
+        ]
+    }
+]
