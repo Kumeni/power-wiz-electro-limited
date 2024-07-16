@@ -26,3 +26,11 @@ main{
 .content p{
     margin: 2rem 0rem;
 }
+
+.embeded-policy{
+    width:95%;
+    max-width: 1000px;
+    height: 100vh;
+    display: block;
+    margin: 3rem auto;
+}

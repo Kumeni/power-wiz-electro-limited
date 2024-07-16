@@ -24,11 +24,12 @@ const updateUI = images => {
     for(i=0; i<images.length; i++){
         for(j=0; j < images[i].images.length; j++){
             src = images[i].root;
-            innerHTML += `<a href="#"><img src='./assets/${src}/${images[i].images[j].src}'/></a>`;
+            innerHTML += `<a class='box' href="#"><img src='./assets/${src}/${images[i].images[j].src}'/></a>`;
         }
     }
 
     container.innerHTML = innerHTML;
+    mosaic(document.getElementsByClassName("box"), 20);
 }
 
 const updateFilters = (images, id) => {
