@@ -25,6 +25,11 @@
     position:relative;
 }
 
+.section-content p, .section-content h1{
+    color: white;
+    color: black;
+}
+
 .content-left > div:first-of-type{
     grid-area:1/2/span 1/ span 1;
 }
