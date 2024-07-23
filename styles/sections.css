@@ -19,8 +19,25 @@
 
 .content-right > div:first-of-type img, .content-left > div:first-of-type img{
     width:100%;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
 }
-
+/*.hover03 figure img {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover03 figure:hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}*/
+.content-right > div:first-of-type img:hover, .content-left > div:first-of-type img:hover{
+    -webkit-transform: scale(1.05);
+	transform: scale(1.05);
+    cursor: pointer;
+    border-radius: 0px;
+}
 .section-content{
     position:relative;
 }
@@ -29,7 +46,10 @@
     color: white;
     color: black;
 }
-
+.section-content h1{
+    position: relative;
+    z-index: 1;
+}
 .content-left > div:first-of-type{
     grid-area:1/2/span 1/ span 1;
 }
@@ -54,5 +74,5 @@
 }
 
 .content-left .section-content img, .content-right .section-content img{
-    z-index: 1 !important;
+    z-index: 0 !important;
 }

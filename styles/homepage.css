@@ -45,6 +45,9 @@
 .landing-3 p, .landing-3 h1, .landing-3 span{
     color: white;
 }
+.landing h1{
+    font-size: 2rem !important;
+}
 .landing .content-right{
     width: 80%;
     margin: auto;
@@ -146,9 +149,13 @@
         margin: 0rem auto 0rem auto;
     }
 }
+.telecommunication-image-container{
+    z-index: 1 !important;
+}
 .telecommunication-maintenance-image{
     width:100%;
     display: block;
+    position: relative;
 }
 .gears-vector{
     width:500px;
