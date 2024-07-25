@@ -401,3 +401,18 @@
     height: auto;
     opacity: 0.1;
 }
+
+.residential-solar-panels .section-content{
+    animation: textFromLeft 1s linear;
+}
+
+@keyframes textFromLeft{
+    0%{
+        margin-right:-2rem;
+        opacity: 0;
+    }
+    100%{
+        margin-right:0rem;
+        opacity:1;
+    }
+}
