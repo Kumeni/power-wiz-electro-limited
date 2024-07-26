@@ -16,8 +16,9 @@
 .homepage-landing > div:last-of-type{
     padding-right: 2rem;
 }
-.homepage-landing > div:first-of-type{
+.navigation{
     /* border:2px solid green; */
+    transition: background-color 0.5s linear;
 }
 .homepage-landing .section-content p{
     font-weight: 500;
@@ -377,6 +378,24 @@
 .our-core-values h3{
     margin: 2rem auto;
     font-size:1rem;
+}
+.our-core-values img{
+    transition:transform 1s;
+}
+.our-core-values > div:hover{
+    cursor: pointer;
+}
+.our-core-values > div:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.our-core-values .underline{
+    margin: auto auto 2rem auto;
+    width: 0px;
+    transition: width 0.5s;
+}
+.our-core-values > div:hover .underline{
+    width: 40px;
 }
 .our-core-values p, .our-core-values h3{
     text-align: center;

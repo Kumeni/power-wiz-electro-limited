@@ -23,3 +23,37 @@ const toggleNavigation = () => {
         navigationState = false;
     }
 }
+
+//let landing = document.getElementsByClassName("landing");
+//console.log(landing[0]);
+
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    console.log(rect);
+    return (
+        //rect.top >= -window.innerHeight &&
+        rect.top >= -rect.height
+        //rect.left >= 0 &&
+        //rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        //rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+    return (
+        //rect.top >= -window.innerHeight &&
+        rect.top <= -rect.height &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Usage example
+document.addEventListener('scroll', function() {
+    const element = document.getElementsByClassName("landing")[0];
+    if (isElementInViewport(element)) {
+        //console.log('Element is in the viewport');
+        document.getElementsByClassName("navigation")[0].style.backgroundColor = "#fcc12c00";
+    } else {
+        //console.log('Element is not in the viewport');
+        document.getElementsByClassName("navigation")[0].style.backgroundColor = "#FCC22C";
+    }
+});

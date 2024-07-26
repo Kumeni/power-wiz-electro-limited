@@ -174,8 +174,10 @@ nav{
     .large-screen-menu-bars{
         display: none;
     }
+    .hamburger-menu > ul{
+        background-color: white !important;
+    }
 }
-
-/* .dynamic-text{
+.dynamic-text{
     color: white;
-} */
+}

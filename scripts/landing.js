@@ -28,22 +28,4 @@ swiperLanding.on('slideChange', function (event) {
     //console.log(event.progress);
   });
 
-function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
 
-// Usage example
-document.addEventListener('scroll', function() {
-    const element = document.querySelector('#yourElementId');
-    if (isElementInViewport(element)) {
-        console.log('Element is in the viewport');
-    } else {
-        console.log('Element is not in the viewport');
-    }
-});
