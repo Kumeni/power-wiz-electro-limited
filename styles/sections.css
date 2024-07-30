@@ -20,7 +20,7 @@
 .content-right > div:first-of-type img, .content-left > div:first-of-type img{
     width:100%;
     border-radius: 20px;
-    transition: .3s ease-in-out;
+    transition: 1s ease-in-out;
 }
 /*.hover03 figure img {
 	-webkit-transform: scale(1.5);
@@ -40,8 +40,8 @@
 }
 .section-content{
     position:relative;
+    transition: .5s linear;
 }
-
 .section-content p, .section-content h1{
     color: white;
     color: black;

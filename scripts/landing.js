@@ -1,5 +1,6 @@
 swiperLanding.on('slideChange', function (event) {
     let dynamicTexts = document.getElementsByClassName("dynamic-text"), i = 0, hambergerMenu = document.getElementsByClassName("hamburger-menu-ul")[0];
+    monitorAllTheElements();
     if(event.realIndex == 0){
         //slide 1 is active
         for( i=0; i < dynamicTexts.length; i++ ){

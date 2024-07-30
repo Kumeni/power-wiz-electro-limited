@@ -1,0 +1,30 @@
+.slide-in-from-right{
+    position: relative;
+    transition: .5s ease-in-out;
+}
+@keyframes flyInFromLeftAnimation{
+    0%{
+        opacity: 0;
+        left:20%;
+        background-color: red;
+    }
+
+    100%{
+        opacity: 1;
+        left: 0rem;
+        background-color: transparent;
+    }
+}
+@keyframes flyInFromRightAnimation{
+    0%{
+        opacity: 0;
+        right:20%;
+        background-color: red;
+    }
+
+    100%{
+        opacity: 1;
+        right: 0rem;
+        background-color: transparent;
+    }
+}

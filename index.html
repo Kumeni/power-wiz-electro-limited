@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="./styles/global.css" type="text/css"/>
     <link rel="stylesheet" href="./styles/navigation.css" type="text/css"/>
+    <link rel="stylesheet" href="./styles/animations.css" type="text/css"/>
     <link rel="stylesheet" href="./styles/sections.css" type="text/css"/>
     <link rel="stylesheet" href="./styles/homepage.css" type="text/css"/>
     <link rel="stylesheet" href="./styles/action-buttons.css" type="text/css"/>
@@ -264,12 +265,12 @@
                 <img class="telecommunication-maintenance-image" src="./assets/homepage/telecommunication maintenance by power-wiz electro limited.png" alt="telecomunication installation by power-wiz electro limited" />
             </div>
             <div class="section-content">
-                <p>
+                <p class="animation-test slide-in-from-left">
                     Power-Wiz Electro LTD is a vibrant integral Telecommunication Engineering and
                     Installation solutions company with International standards & quality with local
                     competencies, low cost and just in time delivery to satisfy its customers.
                 </p>
-                <div class="view-more">
+                <div class="view-more slide-in-from-left">
                     <span>View more...</span>
                     <a href="./about-us.html">
                         <img title="About Power-Wiz Electro Limited" class="box-shadow" src="./assets/homepage/arrow-right.png" alt="right arrow" />
@@ -288,13 +289,13 @@
                 <img class="residential-solar-panel-installation-image"src="./assets/homepage/solar panel by power-wiz electro limited without grid.png" alt="solar panel installation by power-wiz electro limited" />
             </div>
             <div class="section-content">
-                <h1>1. Residential Solar Systems Solutions</h1>
-                <div class="underline"></div>
-                <p>
+                <h1 class="slide-in-from-right">1. Residential Solar Systems Solutions</h1>
+                <div class="underline slide-in-from-right"></div>
+                <p class="slide-in-from-right">
                     Transform your home into an eco-friendly haven with our top-notch
                     residential solar system solutions at Power-Wiz Electro LTD. 
                 </p>
-                <div class="action-buttons">
+                <div class="action-buttons slide-in-from-right">
                     <a href="./contact-us.html" class="get-quote-button box-shadow" onclick="setFormSubject('RE: Residential Solar System Solutions', 'Hello, \nI would like to inquire about your Residential Solar System Solutions.\n')">GET QUOTE</a>
                     <div class="view-more">
                         <span>View more...</span>
@@ -621,6 +622,7 @@
         <p class="copyright">Copyright &copy; 2024. All Rights Reserved. Maintained by <a href="https://yosambranding.art">Yosam Branding</a></p>
     </footer>
     <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/animation.js"></script>
     <script src="./scripts/get-quote.js"></script>
     <script src = "./scripts/swiper/swiper-bundle.min.js"></script>
     <script src="./scripts/swiper/initialize-swiper.js"></script>

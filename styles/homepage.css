@@ -12,7 +12,10 @@
     column-gap:1rem;
     /* border: 1px solid black; */
 }
-
+.swiper-landing{
+    height: max-content;
+    /* border: 3px solid black; */
+}
 .homepage-landing > div:last-of-type{
     padding-right: 2rem;
 }
@@ -415,8 +418,10 @@
 .background-video{
     position: fixed;
     z-index: -2;
-    top:0;
-    width: 100vw;
+    bottom:0;
+    /* width: 100vw; */
+    min-height:120vh;
+    min-width: 100vw;
     height: auto;
     opacity: 0.1;
 }
