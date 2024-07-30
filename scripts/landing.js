@@ -6,6 +6,8 @@ swiperLanding.on('slideChange', function (event) {
     let sectionContents = document.getElementsByClassName("swiper-landing")[0].getElementsByClassName("section-content");
     for(i=0; i<sectionContents.length; i++){
         sectionContents[i].style.top = "0rem";
+        sectionContents[i].style.opacity = "1";
+        
     }
     if(event.realIndex == 0){
         //slide 1 is active
