@@ -1,6 +1,7 @@
 swiperLanding.on('slideChange', function (event) {
     let dynamicTexts = document.getElementsByClassName("dynamic-text"), i = 0, hambergerMenu = document.getElementsByClassName("hamburger-menu-ul")[0];
-    monitorAllTheElements();
+    if(monitorAllTheElements)
+        monitorAllTheElements();
 
     let sectionContents = document.getElementsByClassName("swiper-landing")[0].getElementsByClassName("section-content");
     for(i=0; i<sectionContents.length; i++){
@@ -33,5 +34,3 @@ swiperLanding.on('slideChange', function (event) {
     }
     //console.log(event.progress);
   });
-
-

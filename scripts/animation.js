@@ -13,7 +13,7 @@ function isElementInViewport(el) {
     );
 }
 
-const minitorAllTheElements = () => {
+const monitorAllTheElements = () => {
     let contentSections = document.getElementsByClassName("section-content"), i, j;
 
     for(i=0; i<contentSections.length; i++){
@@ -57,4 +57,4 @@ const minitorAllTheElements = () => {
     }
 }
 
-document.addEventListener('scroll', minitorAllTheElements);
+document.addEventListener('scroll', monitorAllTheElements);
