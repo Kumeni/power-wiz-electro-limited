@@ -42,7 +42,7 @@ const minitorAllTheElements = () => {
              * Initiate the slide out animation
              */
             contentSections[i].style.opacity = "0";
-            contentSections[i].style.top = "6rem";
+            contentSections[i].style.top = contentSections[i].getBoundingClientRect().top < 0? "-6rem": "6rem";
             let slideInFromLeftElements = document.getElementsByClassName("slide-in-from-left");
             for(j=0; j<slideInFromLeftElements.length; j++){
                 //slideInFromLeftElements[j].style.left = "20%";
