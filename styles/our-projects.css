@@ -3,13 +3,20 @@
     display: -ms-grid;
     display: -moz-grid;
 }
-
+.project-images{
+    margin-top: 4rem;
+}
 .our-projects-title{
     text-align: center;
     margin: 2rem auto 2rem auto;
 }
 .filters{
     margin: 1rem auto;
+    white-space: nowrap;
+    overflow: auto;
+    /* scrollbar-color: red orange; */
+    scrollbar-width: thin;
+    max-width: 1200px;
 }
 .filters button{
     padding: 1rem;
@@ -28,13 +35,13 @@
     box-shadow: 2px 2px 4px rgb(180, 180, 180);
 }
 .content{
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: auto;
     padding: 0.5rem;
 }
 .project-images{
     grid-template-columns: repeat(3, auto);
-    column-gap: 1rem;
+    column-gap: 0.1rem;
     row-gap: 1rem;
 }
 @media (max-width: 768px){

@@ -30,9 +30,10 @@ const toggleNavigation = () => {
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     console.log(rect);
+    console.log(rect.top);
     return (
         //rect.top >= -window.innerHeight &&
-        rect.top >= -rect.height
+        rect.top >= -rect.height-1
         //rect.left >= 0 &&
         //rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
         //rect.right <= (window.innerWidth || document.documentElement.clientWidth)
@@ -49,7 +50,9 @@ function isElementInViewport(el) {
 // Usage example
 document.addEventListener('scroll', function() {
     const element = document.getElementsByClassName("landing")[0];
-    if (isElementInViewport(element)) {
+
+    console.log(element.getBoundingClientRect().top);
+    if (isElementInViewport(element) || element.getBoundingClientRect().top == 0) {
         //console.log('Element is in the viewport');
         document.getElementsByClassName("navigation")[0].style.backgroundColor = "#fcc12c00";
     } else {

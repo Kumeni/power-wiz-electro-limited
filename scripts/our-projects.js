@@ -19,7 +19,8 @@ fetch('./scripts/project-images.json')
     })
 
 const updateUI = images => {
-    let container = document.getElementsByClassName("project-images")[0], innerHTML = ``, i, src;
+    // let container = document.getElementsByClassName("project-images")[0], innerHTML = ``, i, src;
+    let container = document.getElementsByClassName("mosaic")[0], innerHTML = ``, i, src;
 
     for(i=0; i<images.length; i++){
         for(j=0; j < images[i].images.length; j++){
