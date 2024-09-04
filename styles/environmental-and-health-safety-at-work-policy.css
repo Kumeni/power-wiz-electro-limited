@@ -5,7 +5,9 @@ main{
     max-width: 1000px;
     margin: auto;
 }
-
+.navigation{
+    background-color: #FCC22C;
+}
 .policy-image{
     width: 100%;
 }

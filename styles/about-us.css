@@ -2,6 +2,9 @@ main{
     margin: auto;
     width: 100%;
 }
+.navigation{
+    background-color: #FCC22C;
+}
 .article{
     margin-top: 4rem;
 }

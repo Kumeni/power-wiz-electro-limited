@@ -3,7 +3,9 @@
     display: -ms-grid;
     display: -moz-grid;
 }
-
+.navigation{
+    background-color: #FCC22C;
+}
 .careers-content{
     max-width: 1000px;
     margin: 3rem auto;

@@ -3,7 +3,9 @@
     display: -ms-grid;
     display: -moz-grid;
 }
-
+.navigation{
+    background-color: #FCC22C;
+}
 .contact-details{
     max-width:1000px;
     margin: 2rem auto;

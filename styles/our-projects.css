@@ -1,3 +1,6 @@
+.navigation{
+    background-color: #FCC22C;
+}
 .project-images{
     display: grid;
     display: -ms-grid;
@@ -7,8 +10,9 @@
     margin-top: 4rem;
 }
 .our-projects-title{
+    font-size: 1.5rem;
     text-align: center;
-    margin: 2rem auto 2rem auto;
+    margin: 2rem auto 1rem auto;
 }
 .filters{
     margin: 1rem auto;
@@ -17,6 +21,9 @@
     /* scrollbar-color: red orange; */
     scrollbar-width: thin;
     max-width: 1200px;
+}
+main .underline{
+    margin-bottom: 0rem !important;
 }
 .filters button{
     padding: 1rem;

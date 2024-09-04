@@ -8,6 +8,9 @@
     font-size: 1.3rem;
     margin: 1rem auto;
 }
+.navigation{
+    background-color: #FCC22C;
+}
 .partners{
     grid-template-columns: repeat(4, auto);
     justify-content: center;
