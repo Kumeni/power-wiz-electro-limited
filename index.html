@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="./styles/action-buttons.css" type="text/css"/>
     <link rel="stylesheet" href="./scripts/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/footer.css" type="text/css"/>
+    
+    <link rel="stylesheet" href="./scripts/splitting/splitting.css" type="text/css"/>
+    <link rel="stylesheet" href="./scripts/splitting/splitting-cells.css" type="text/css"/>
 
     <link rel="shortcut icon" href="./assets/images/power-wiz electro limited logo.png" />
     
@@ -148,6 +151,72 @@
     </nav>
 
     <main>
+        <div class="swiper-landing-new">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div>
+                        <img src="./assets/homepage/Landing images/Housing construction.jpg" />
+                        <div class="swiper-content">
+                            <h1>POWER-WIZ ELECTRO LTD</h1>
+                            <p>Turnkey Telecom works, Electrical, construction and water supply projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="./assets/homepage/Landing images/Civil Works.jpg" />
+                        <div class="swiper-content">
+                            <h1>BUILDING AND CONSTRUCTION</h1>
+                            <p>YOU CAN COUNT ON!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="./assets/homepage/Landing images/elektromontazh-banner.jpg" />
+                        <div class="swiper-content">
+                            <h1>ICT & POWER SOLUTIONS</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="./assets/homepage/Landing images/Get-Borehole-Drilling-Services-Cost-and-Quotes-in-Bushbuckridge-Mpumalanga.jpg" />
+                        <div class="swiper-content">
+                            <h1>WATER INFRUSTRUCTURE</h1>
+                            <!-- <p>This is just a placeholder text</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="./assets/homepage/Landing images/solar-powerr.jpg" />
+                        <div class="swiper-content">
+                            <h1>SOLAR POWER INSTALLATIONS</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="./assets/homepage/Landing images/telecoms.jpg" />
+                        <div class="swiper-content">
+                            <h1>TELECOMMUNICATION</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
         <div class="swiper-landing">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -622,12 +691,16 @@
         </div>
         <p class="copyright">Copyright &copy; 2024. All Rights Reserved. Maintained by <a href="https://yosambranding.art">Yosam Branding</a></p>
     </footer>
+    <script src="./scripts/splitting/splitting.js"></script>
     <script src="./scripts/navigation.js"></script>
     <script src="./scripts/animation.js"></script>
     <script src="./scripts/get-quote.js"></script>
     <script src = "./scripts/swiper/swiper-bundle.min.js"></script>
     <script src="./scripts/swiper/initialize-swiper.js"></script>
     <script src="./scripts/landing.js"></script>
-    
+    <script>
+        const target = document.querySelector('#target');
+        const results = Splitting({ target: target, by: 'words' });
+    </script>
 </body>
 </html>
