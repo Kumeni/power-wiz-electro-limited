@@ -1,20 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles/transition-example.css" />
+    <link rel="stylesheet" href="style.css">
 
-    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background:#111;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            overflow:hidden;
+        }
+
+        #slider{
+            width:80%;
+            height:60%;
+            position:relative;
+            overflow:hidden;
+            background:#000;
+        }
+
+        .layer{
+            position:absolute;
+            inset:0;
+        }
+
+        .tile{
+            position:absolute;
+            background-repeat:no-repeat;
+            opacity:1;
+            transition:opacity .45s linear;
+            background-position: center;
+        }
+    </style>
 </head>
 <body>
-    <div class="card">
-        <div class="img"> <span></span><span></span><span></span><span></span></div>
-        <div class="content">
-        <h2> MacBook Air</h2>
-        <h2>Lightness</h2>
-        <h4>The most loved Mac is about to make you fall in love all over again. Available in silver, space gray, and gold, the new thinner and lighter MacBook Air features a brilliant Retina display, Touch ID, the latest-generation keyboard, and a Force Touch trackpad</h4>
-        </div>
-    </div>
+
+<div id="slider"></div>
+
+<script>
+    function resolveImage(path) {
+        return new URL(path, window.location.href).href;
+    }
+    const baseURL = "127.0.0.1:5500/power-wiz-electro-limited/"
+    const images = [
+        resolveImage("/assets/homepage/Landing images/Housing construction.jpg"),
+        resolveImage("/assets/homepage/Landing images/Civil Works.jpg"),
+        resolveImage("/assets/homepage/Landing images/elektromontazh-banner.jpg"),
+        resolveImage("/assets/homepage/Landing images/Get-Borehole-Drilling-Services-Cost-and-Quotes-in-Bushbuckridge-Mpumalanga.jpg"),
+        resolveImage("/assets/homepage/Landing images/solar-powerr.jpg"),
+        resolveImage("/assets/homepage/Landing images/telecoms.jpg")
+    ];
+
+    const slider = document.getElementById("slider");
+
+    const rows = 5;
+    const cols = 10;
+
+    const width = slider.clientWidth;
+    const height = slider.clientHeight;
+
+    const tileWidth = width / cols;
+    const tileHeight = height / rows;
+
+    let current = 0;
+
+    function createLayer(image){
+
+        const layer = document.createElement("div");
+        layer.className = "layer";
+
+        for(let y=0;y<rows;y++){
+
+            for(let x=0;x<cols;x++){
+
+                const tile = document.createElement("div");
+
+                tile.className="tile";
+
+                tile.style.left = x*tileWidth+"px";
+                tile.style.top = y*tileHeight+"px";
+
+                tile.style.width = tileWidth+"px";
+                tile.style.height = tileHeight+"px";
+
+                tile.style.backgroundImage=`url(${image})`;
+
+                tile.style.backgroundSize=`${width}px ${height}px`;
+
+                tile.style.backgroundPosition=
+                    `-${x*tileWidth}px -${y*tileHeight}px`;
+
+                layer.appendChild(tile);
+            }
+        }
+
+        return layer;
+    }
+
+    const firstLayer=createLayer(images[0]);
+    slider.appendChild(firstLayer);
+
+    function randomOrder(n){
+
+        let arr=[];
+
+        for(let i=0;i<n;i++)
+            arr.push(i);
+
+        for(let i=arr.length-1;i>0;i--){
+
+            let j=Math.floor(Math.random()*(i+1));
+
+            [arr[i],arr[j]]=[arr[j],arr[i]];
+        }
+
+        return arr;
+    }
+
+    function transition(){
+
+        const next=(current+1)%images.length;
+
+        const oldLayer=slider.children[0];
+
+        const newLayer=createLayer(images[next]);
+
+        slider.appendChild(newLayer);
+
+        const oldTiles=[...oldLayer.children];
+        const newTiles=[...newLayer.children];
+
+        // Start new image invisible
+        newTiles.forEach(tile=>tile.style.opacity=0);
+
+        const order=randomOrder(oldTiles.length);
+
+        order.forEach((index,i)=>{
+
+            setTimeout(()=>{
+
+                oldTiles[index].style.opacity=0;
+
+            },i*20);
+
+        });
+
+        const delay=order.length*20+200;
+
+        order.forEach((index,i)=>{
+
+            setTimeout(()=>{
+
+                newTiles[index].style.opacity=1;
+
+            },delay+i*20);
+
+        });
+
+        setTimeout(()=>{
+
+            slider.removeChild(oldLayer);
+
+            current=next;
+
+        },delay+order.length*20+500);
+
+    }
+
+    setInterval(transition,5000);
+</script>
 </body>
 </html>
