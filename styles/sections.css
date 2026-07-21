@@ -42,9 +42,10 @@
     position:relative;
     transition: .3s linear;
 }
-.section-content p, .section-content h1{
+.section-content p, .section-content h1, .section-content h2, .section-content ul li{
     color: white;
     color: black;
+    font-weight: 500;
 }
 .section-content h1{
     position: relative;

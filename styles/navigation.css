@@ -74,6 +74,15 @@ nav{
     list-style: none;
 }
 
+.sub-menu{
+    margin-left: 2.5rem;
+}
+
+.our-services-container{
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
 .our-services:hover ul{
     /* border: 1px solid black; */
     display: block;
