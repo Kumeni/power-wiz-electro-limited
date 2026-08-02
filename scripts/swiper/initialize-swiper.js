@@ -100,12 +100,12 @@ let swiperLanding = new Swiper('.swiper-landing', {
 
 let swiperLandingNew = new Swiper('.swiper-landing-new', {
   // Optional parameters
-  speed:500,
+  speed:800,
   spaceBetween:10,
   slidesPerView:1,
   direction: 'horizontal',
   loop: true,
-  effect: "fade",
+  effect: "a118",
   // If we need pagination
   allowTouchMove:true,
   pagination: {
@@ -114,7 +114,7 @@ let swiperLandingNew = new Swiper('.swiper-landing-new', {
   },
 
   autoplay:{
-    delay:3000,
+    delay:3300,
     disableOnInteraction:false,
   },
 

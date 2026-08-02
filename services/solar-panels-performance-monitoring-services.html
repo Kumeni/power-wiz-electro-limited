@@ -18,23 +18,41 @@
     <nav class="navigation">
         <div class="menu">
             <div class="logo">
-                <div 
+                <!-- <div 
                     class="menu-bars large-screen-menu-bars" 
                     id="navigation-bars" 
                     onclick="toggleNavigation(true)" >
                     <div></div>
                     <div></div>
                     <div></div>
-                </div>
+                </div> -->
+
+                <button class="menu-btn large-screen-menu-bars" id="menuBtn" onclick="toggleNavigation(true)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <a href="../"><img class="power-wiz-logo" src="../assets/images/power-wiz electro limited logo.png" alt="power-wiz logo" /></a>
             </div>
             <ul class="menu-items">
                 <li class="our-services">
-                    <span>Our Services</span>
+                    <span class="dynamic-text">Our Services</span>
                     <div>
-                        <ul>
+                        <ul class="our-services-container">
                             <a href="./residential-solar-system-solutions.html">Residential Solar Systems Solutions</a>
                             <a href="./commercial-solar-system-solutions.html">Commercial Solar System Solutions</a>
+
+                            <li style="margin-left: 3rem;">Solarization for:</li>
+                            <a href="./solar-panels-for-schools.html" class="sub-menu">Schools</a>
+                            <a href="./solar-panels-for-technical-training-institutes.html" class="sub-menu">TTIs</a>
+                            <a href="./solarization-for-health-centres.html" class="sub-menu">Health Centre under KCB Program</a>
+
+                            <li style="margin-left: 3rem;">Solar PV O&M Services</li>
+                            <a href="./solar-panel-cleaning-services.html" class="sub-menu">Solar Panel Cleaning Services</a>
+                            <a href="./solar-panels-routine-inspection-services.html" class="sub-menu">Routine Inspection</a>
+                            <a href="./solar-panels-performance-monitoring-services.html" class="sub-menu">Performance Monitoring</a>
+                            <a href="./solar-panels-preventative-and-corrective-services.html" class="sub-menu">Preventative and corrective services</a>
+
                             <a href="./telecommunication-equipment-installation-and-maintenance.html">Telecommunication Equipment Installation and Maintenance</a>
                             <a href="./fiber-optics-works.html">Fiber Optics Works</a>
                             <a href="./supply-installation-and-maintenance-of-diesel-generators.html">Supply, Installation and Maintenance of Diesel Generators</a>
@@ -45,11 +63,11 @@
                         </ul>
                     </div>
                 </li>
-                <a href="../our-projects.html">Our Projects</a>
-                <a href="../our-partners.html">Our Partners</a>
-                <a href="../about-us.html">About Us</a>
+                <a href="../our-projects.html" class="dynamic-text">Our Projects</a>
+                <a href="../our-partners.html" class="dynamic-text">Our Partners</a>
+                <a href="../about-us.html" class="dynamic-text">About Us</a>
                 <li class="our-services">
-                    <span>Resources</span>
+                    <span class="dynamic-text">Resources</span>
                     <div>
                         <ul>
                             <a href="../careers.html">Careers</a>
@@ -57,51 +75,112 @@
                         </ul>
                     </div>
                 </li>
-                <a href="../contact-us.html">Contact Us</a>
+                <a class="dynamic-text" href="../contact-us.html" onclick="setFormSubject('RE: General Inquiry', 'Hello, \nHow I would like to inquire about\n')">Contact Us</a>
             </ul>
-            <div 
-                    class="menu-bars small-screen-menu-bars" 
-                    id="navigation-bars" 
-                    onclick="toggleNavigation(true)" >
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+            <!-- <div 
+                class="menu-bars small-screen-menu-bars" 
+                id="navigation-bars" 
+                onclick="toggleNavigation(true)" >
+                <div></div>
+                <div></div>
+                <div></div>
+            </div> -->
+
+            <button class="menu-btn small-screen-menu-bars" id="menuBtn" onclick="toggleNavigation(true)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <script>
+                const menuBtns = document.getElementsByClassName("menu-btn");
+
+                for (let i = 0; i < menuBtns.length; i++) {
+                    const element = menuBtns[i];
+                    element.addEventListener("click", () => {
+                        element.classList.toggle("active");
+                    });
+                    
+                }
+            </script>
         </div>
         <div class="hamburger-menu">
-            <ul>
-                <a href="../index.html">Home</a>
-                <a href="../our-projects.html">Our Projects</a>
-                <a href="../our-partners.html">Our Partners</a>
-                <a href="../about-us.html">About Us</a>
+            <ul class="hamburger-menu-ul">
                 <li>
-                    <span>Resources</span>
-                    <div class="underline"></div>
                     <ul>
-                        <a href="../careers.html">Careers</a>
-                        <a href="../environmental-and-health-safety-at-work-policy.html">EHS Policy</a>
+                        <li class="navigation-submenu">
+                            <p>Our Services</p>
+                            <div class="underline"></div>
+                            <ul>
+                                <a href="./residential-solar-system-solutions.html">Residential Solar Systems Solutions</a>
+                                <a href="./commercial-solar-system-solutions.html">Commercial Solar System Solutions</a>
+                                <a href="./telecommunication-equipment-installation-and-maintenance.html">Telecommunication Equipment Installation and Maintenance</a>
+                                <a href="./fiber-optics-works.html">Fiber Optics Works</a>
+                                <a href="./supply-installation-and-maintenance-of-diesel-generators.html">Supply, Installation and Maintenance of Diesel Generators</a>
+                                <a href="./supply-and-implementation-of-power-lines-and-grid-extension-services.html">Supply and implementation of Power Lines and Grid Extension Services</a>
+                                <a href="./electrical-and-mechanical-works.html">Electrical and Mechanical Works</a>
+                                <a href="./full-turnkey-civil-works.html">Full Turnkey Civil Works</a>
+                                <a href="./water-infrustructure-implementation-and-supply-and-extension-projects.html">Water Infrustructure Implementation and Supply and Extension Projects</a>
+                            </ul>
+                        </li>
+                        <li class="navigation-submenu">
+                            <p>Solar PV O&M Services</p>
+                            <div class="underline"></div>
+                            <ul>
+                                <a href="./solar-panel-cleaning-services.html" class="sub-menu">Solar Panel Cleaning Services</a>
+                                <a href="./solar-panels-routine-inspection-services.html" class="sub-menu">Routine Inspection</a>
+                                <a href="./solar-panels-performance-monitoring-services.html" class="sub-menu">Performance Monitoring</a>
+                                <a href="./solar-panels-preventative-and-corrective-services.html" class="sub-menu">Preventative and corrective services</a>
+                            </ul>
+                        </li>
                     </ul>
+                    
                 </li>
-                <a href="../contact-us.html">Contact Us</a>
                 <li>
-                    <span>Our Services</span>
-                    <div class="underline"></div>
                     <ul>
-                        <a href="./residential-solar-system-solutions.html">Residential Solar Systems Solutions</a>
-                        <a href="./commercial-solar-system-solutions.html">Commercial Solar System Solutions</a>
-                        <a href="./telecommunication-equipment-installation-and-maintenance.html">Telecommunication Equipment Installation and Maintenance</a>
-                        <a href="./fiber-optics-works.html">Fiber Optics Works</a>
-                        <a href="./supply-installation-and-maintenance-of-diesel-generators.html">Supply, Installation and Maintenance of Diesel Generators</a>
-                        <a href="./supply-and-implementation-of-power-lines-and-grid-extension-services.html">Supply and implementation of Power Lines and Grid Extension Services</a>
-                        <a href="./electrical-and-mechanical-works.html">Electrical and Mechanical Works</a>
-                        <a href="./full-turnkey-civil-works.html">Full Turnkey Civil Works</a>
-                        <a href="./water-infrustructure-implementation-and-supply-and-extension-projects.html">Water Infrustructure Implementation and Supply and Extension Projects</a>
+                        <li class="navigation-submenu">
+                            <p>Resources</p>
+                            <div class="underline"></div>
+                            <ul>
+                                <a href="../careers.html">Careers</a>
+                                <a href="../environmental-and-health-safety-at-work-policy.html">EHS Policy</a>
+                            </ul>
+                        </li>
+                        <li class="navigation-submenu">
+                            <p>Solarization for</p>
+                            <div class="underline"></div>
+                            <ul>
+                                <a href="./solar-panels-for-schools.html" class="sub-menu">Schools</a>
+                                <a href="./solar-panels-for-technical-training-institutes.html" class="sub-menu">TTIs</a>
+                                <a href="./solarization-for-health-centres.html" class="sub-menu">Health Centre under KCB Program</a>
+                            </ul>
+                        </li>
+                        <li style="margin-top:2rem;">
+                            <ul>
+                                <a href="../our-projects.html">Our Projects</a>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <a href="../our-partners.html">Our Partners</a>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <a href="../about-us.html">About Us</a>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <a href="../contact-us.html" onclick="setFormSubject('RE: General Inquiry', 'Hello, \nHow I would like to inquire about\n')">Contact Us</a>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
             </ul>
         </div>
     </nav>
-    <nav class="navigation" style="position:relative;visibility:hidden">
+    <nav class="navigation" style="position:relative;visibility:hidden; display: none;">
         <div class="menu">
             <div class="logo">
                 <div 
@@ -112,30 +191,26 @@
                     <div></div>
                     <div></div>
                 </div>
-                <a href="#"><img class="power-wiz-logo" src="../assets/images/power-wiz electro limited logo.png" alt="power-wiz logo" /></a>
+                <a href="/"><img class="power-wiz-logo" src="./assets/images/power-wiz electro limited logo.png" alt="power-wiz logo" /></a>
             </div>
             <ul class="menu-items">
                 <li class="our-services">
                     <span>Our Services</span>
                     <div>
                         <ul>
-                            <a href="./residential-solar-system-solutions.html">Residential Solar Systems Solutions</a>
-                            <a href="./commercial-solar-system-solutions.html">Commercial Solar System Solutions</a>
-                            <a href="./telecommunication-equipment-installation-and-maintenance.html">Telecommunication Equipment Installation and Maintenance</a>
-                            <a href="./fiber-optics-works.html">Fiber Optics Works</a>
-                            <a href="./supply-installation-and-maintenance-of-diesel-generators.html">Supply, Installation and Maintenance of Diesel Generators</a>
-                            <a href="./supply-and-implementation-of-power-lines-and-grid-extension-services.html">Supply and implementation of Power Lines and Grid Extension Services</a>
-                            <a href="./electrical-and-mechanical-works.html">Electrical and Mechanical Works</a>
-                            <a href="./full-turnkey-civil-works.html">Full Turnkey Civil Works</a>
-                            <a href="./water-infrustructure-implementation-and-supply-and-extension-projects.html">Water Infrustructure Implementation and Supply and Extension Projects</a>
+                            <a href="#">Residential Solar Panels</a>
+                            <a href="#">Commercial Solar Panels</a>
+                            <a href="#">Commercial Solar Panels</a>
+                            <a href="#">Commercial Solar Panels</a>
+                            <!-- <a href="#">Commercial Solar Panels</a> -->
                         </ul>
                     </div>
                 </li>
-                <a href="/our-projects.html">Our Projects</a>
-                <a href="/our-partners.html">Our Partners</a>
-                <a href="/about-us.html">About Us</a>
-                <a href="/resources.html">Resources</a>
-                <a href="/contact-us.html">Contact Us</a>
+                <a href="#">Our Projects</a>
+                <a href="#">Our Partners</a>
+                <a href="#">About Us</a>
+                <a href="#">Resources</a>
+                <a href="#">Contact Us</a>
             </ul>
             <div
                     class="menu-bars small-screen-menu-bars" 

@@ -25,14 +25,20 @@
     <nav class="navigation">
         <div class="menu">
             <div class="logo">
-                <div 
+                <!-- <div 
                     class="menu-bars large-screen-menu-bars" 
                     id="navigation-bars" 
                     onclick="toggleNavigation(true)" >
                     <div></div>
                     <div></div>
                     <div></div>
-                </div>
+                </div> -->
+
+                <button class="menu-btn large-screen-menu-bars" id="menuBtn" onclick="toggleNavigation(true)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <a href="./"><img class="power-wiz-logo" src="./assets/images/power-wiz electro limited logo.png" alt="power-wiz logo" /></a>
             </div>
             <ul class="menu-items">
@@ -78,42 +84,104 @@
                 </li>
                 <a class="dynamic-text" href="./contact-us.html" onclick="setFormSubject('RE: General Inquiry', 'Hello, \nHow I would like to inquire about\n')">Contact Us</a>
             </ul>
-            <div 
-                    class="menu-bars small-screen-menu-bars" 
-                    id="navigation-bars" 
-                    onclick="toggleNavigation(true)" >
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+            <!-- <div 
+                class="menu-bars small-screen-menu-bars" 
+                id="navigation-bars" 
+                onclick="toggleNavigation(true)" >
+                <div></div>
+                <div></div>
+                <div></div>
+            </div> -->
+
+            <button class="menu-btn small-screen-menu-bars" onclick="toggleNavigation(true)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <script>
+                const menuBtns = document.getElementsByClassName("menu-btn");
+
+                for (let i = 0; i < menuBtns.length; i++) {
+                    const element = menuBtns[i];
+                    element.addEventListener("click", () => {
+                        element.classList.toggle("active");
+                    });
+                    
+                }
+            </script>
         </div>
         <div class="hamburger-menu">
             <ul class="hamburger-menu-ul">
-                <a href="./our-projects.html">Our Projects</a>
-                <a href="./our-partners.html">Our Partners</a>
-                <a href="./about-us.html">About Us</a>
                 <li>
-                    <span>Resources</span>
-                    <div class="underline"></div>
                     <ul>
-                        <a href="careers.html">Careers</a>
-                        <a href="environmental-and-health-safety-at-work-policy.html">EHS Policy</a>
+                        <li class="navigation-submenu">
+                            <p>Our Services</p>
+                            <div class="underline"></div>
+                            <ul>
+                                <a href="./services/residential-solar-system-solutions.html">Residential Solar Systems Solutions</a>
+                                <a href="./services/commercial-solar-system-solutions.html">Commercial Solar System Solutions</a>
+                                <a href="./services/telecommunication-equipment-installation-and-maintenance.html">Telecommunication Equipment Installation and Maintenance</a>
+                                <a href="./services/fiber-optics-works.html">Fiber Optics Works</a>
+                                <a href="./services/supply-installation-and-maintenance-of-diesel-generators.html">Supply, Installation and Maintenance of Diesel Generators</a>
+                                <a href="./services/supply-and-implementation-of-power-lines-and-grid-extension-services.html">Supply and implementation of Power Lines and Grid Extension Services</a>
+                                <a href="./services/electrical-and-mechanical-works.html">Electrical and Mechanical Works</a>
+                                <a href="./services/full-turnkey-civil-works.html">Full Turnkey Civil Works</a>
+                                <a href="./services/water-infrustructure-implementation-and-supply-and-extension-projects.html">Water Infrustructure Implementation and Supply and Extension Projects</a>
+                            </ul>
+                        </li>
+                        <li class="navigation-submenu">
+                            <p>Solar PV O&M Services</p>
+                            <div class="underline"></div>
+                            <ul>
+                                <a href="./services/solar-panel-cleaning-services.html" class="sub-menu">Solar Panel Cleaning Services</a>
+                                <a href="./services/solar-panels-routine-inspection-services.html" class="sub-menu">Routine Inspection</a>
+                                <a href="./services/solar-panels-performance-monitoring-services.html" class="sub-menu">Performance Monitoring</a>
+                                <a href="./services/solar-panels-preventative-and-corrective-services.html" class="sub-menu">Preventative and corrective services</a>
+                            </ul>
+                        </li>
                     </ul>
+                    
                 </li>
-                <a href="./contact-us.html" onclick="setFormSubject('RE: General Inquiry', 'Hello, \nHow I would like to inquire about\n')">Contact Us</a>
                 <li>
-                    <span>Our Services</span>
-                    <div class="underline"></div>
                     <ul>
-                        <a href="./services/residential-solar-system-solutions.html">Residential Solar Systems Solutions</a>
-                        <a href="./services/commercial-solar-system-solutions.html">Commercial Solar System Solutions</a>
-                        <a href="./services/telecommunication-equipment-installation-and-maintenance.html">Telecommunication Equipment Installation and Maintenance</a>
-                        <a href="./services/fiber-optics-works.html">Fiber Optics Works</a>
-                        <a href="./services/supply-installation-and-maintenance-of-diesel-generators.html">Supply, Installation and Maintenance of Diesel Generators</a>
-                        <a href="./services/supply-and-implementation-of-power-lines-and-grid-extension-services.html">Supply and implementation of Power Lines and Grid Extension Services</a>
-                        <a href="./services/electrical-and-mechanical-works.html">Electrical and Mechanical Works</a>
-                        <a href="./services/full-turnkey-civil-works.html">Full Turnkey Civil Works</a>
-                        <a href="./services/water-infrustructure-implementation-and-supply-and-extension-projects.html">Water Infrustructure Implementation and Supply and Extension Projects</a>
+                        <li class="navigation-submenu">
+                            <p>Resources</p>
+                            <div class="underline"></div>
+                            <ul>
+                                <a href="careers.html">Careers</a>
+                                <a href="environmental-and-health-safety-at-work-policy.html">EHS Policy</a>
+                            </ul>
+                        </li>
+                        <li class="navigation-submenu">
+                            <p>Solarization for</p>
+                            <div class="underline"></div>
+                            <ul>
+                                <a href="./services/solar-panels-for-schools.html" class="sub-menu">Schools</a>
+                                <a href="./services/solar-panels-for-technical-training-institutes.html" class="sub-menu">TTIs</a>
+                                <a href="./services/solarization-for-health-centres.html" class="sub-menu">Health Centre under KCB Program</a>
+                            </ul>
+                        </li>
+                        <li style="margin-top:2rem;">
+                            <ul>
+                                <a href="./our-projects.html">Our Projects</a>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <a href="./our-partners.html">Our Partners</a>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <a href="./about-us.html">About Us</a>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <a href="./contact-us.html" onclick="setFormSubject('RE: General Inquiry', 'Hello, \nHow I would like to inquire about\n')">Contact Us</a>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -163,72 +231,92 @@
     </nav>
 
     <main>
-        <div class="swiper-landing-new">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <div>
-                        <img src="./assets/homepage/Landing images/Housing construction.jpg" />
-                        <div class="swiper-content">
-                            <h1>POWER-WIZ ELECTRO LTD</h1>
-                            <p>Turnkey Telecom works, Electrical, construction and water supply projects.</p>
+
+        <section class="landing-container">
+            <div id="slider"></div>
+
+            <script src="./scripts/GridFadeSlider_v3.js"></script>
+            <script>
+                const slider = new GridFadeSlider({
+                    container: "#slider",
+                    images: [
+                        "./assets/homepage/Landing images/Housing construction.jpg",
+                        "./assets/homepage/Landing images/Civil Works.jpg",
+                        "./assets/homepage/Landing images/elektromontazh-banner.jpg",
+                        "./assets/homepage/Landing images/Get-Borehole-Drilling-Services-Cost-and-Quotes-in-Bushbuckridge-Mpumalanga.jpg",
+                        "./assets/homepage/Landing images/solar-powerr.jpg",
+                        "./assets/homepage/Landing images/telecoms.jpg"
+                    ],
+                    rows: 8,
+                    cols: 12,
+                    interval: 4000,
+                    duration: 1000
+                });
+            </script>
+
+            <div class="swiper-landing-new">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="swiper-content">
+                                <h1>POWER-WIZ ELECTRO LTD</h1>
+                                <p>Turnkey Telecom works, Electrical, construction and water supply projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="swiper-content">
+                                <h1>BUILDING AND CONSTRUCTION</h1>
+                                <p>YOU CAN COUNT ON!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="swiper-content">
+                                <h1>ICT & POWER SOLUTIONS</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="swiper-content">
+                                <h1>WATER INFRUSTRUCTURE</h1>
+                                <!-- <p>This is just a placeholder text</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="swiper-content">
+                                <h1>SOLAR POWER INSTALLATIONS</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="swiper-content">
+                                <h1>TELECOMMUNICATION</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div>
-                        <img src="./assets/homepage/Landing images/Civil Works.jpg" />
-                        <div class="swiper-content">
-                            <h1>BUILDING AND CONSTRUCTION</h1>
-                            <p>YOU CAN COUNT ON!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div>
-                        <img src="./assets/homepage/Landing images/elektromontazh-banner.jpg" />
-                        <div class="swiper-content">
-                            <h1>ICT & POWER SOLUTIONS</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div>
-                        <img src="./assets/homepage/Landing images/Get-Borehole-Drilling-Services-Cost-and-Quotes-in-Bushbuckridge-Mpumalanga.jpg" />
-                        <div class="swiper-content">
-                            <h1>WATER INFRUSTRUCTURE</h1>
-                            <!-- <p>This is just a placeholder text</p> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div>
-                        <img src="./assets/homepage/Landing images/solar-powerr.jpg" />
-                        <div class="swiper-content">
-                            <h1>SOLAR POWER INSTALLATIONS</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div>
-                        <img src="./assets/homepage/Landing images/telecoms.jpg" />
-                        <div class="swiper-content">
-                            <h1>TELECOMMUNICATION</h1>
-                        </div>
-                    </div>
-                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+            
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+            
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
             </div>
-            <!-- If we need pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
+        </section>
         
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
         
-            <!-- If we need scrollbar -->
-            <!-- <div class="swiper-scrollbar"></div> -->
-        </div>
         <div class="swiper-landing">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -649,10 +737,9 @@
                     Power-Wiz Electro Limited
                 </p>
                 <p>
-                    Dul Dul ph 1 Business complex, <br />
+                    Dul Dul ph 2 Business complex, <br />
                     Block A 1st Floor, <br />
                     Cabanas - Mombasa Road, <br />
-                    Behind Tuff steel
                 </p>
             </div>
             <div class="important-links">
