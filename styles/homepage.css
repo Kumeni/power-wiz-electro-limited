@@ -3,89 +3,65 @@
     display: -ms-grid;
     display: -moz-grid;
 }
+
 .landing{
     min-height:80vh;
 }
+
+.landing-container{
+    
+}
+
 .landing-container .swiper-slide{
     width: 80vw;
 }
+
 .homepage-landing{
     grid-template-columns: 55% 45% !important;
     column-gap:1rem;
     /* border: 1px solid black; */
 }
-.swiper-landing-new{
-    /* min-height: 50vh; */
-    /* width: 90%; */
+
+.landing-container .swiper-landing-new{
+    color: white;
     margin: 1rem auto;
+    position: absolute;
+    top:45%;
+    left:0;
+    right:0;
+    bottom:0;
 }
-.swiper-landing-new .swiper-slide:nth-of-type(even){
-    /* background-color: gray; */
+
+#slider{
+    width: 95vw;
+    max-width: 1200px;
+    height: 90vh;
+    max-height: 500px;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 2rem auto;
 }
 
 .swiper-landing-new .swiper-pagination{
     margin: 0rem auto;
 }
-.swiper-landing-new .swiper-slide > div{
-    display: grid;
-    display: -ms-grid;
-    display: -moz-grid;
 
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-content: center;
-
-    position: relative;
-    max-height: 70vh;
-    overflow: hidden;
-
-    /* border-radius: 1rem; */
-}
 .swiper-landing-new .swiper-slide .swiper-content{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;   
-
-    display: grid;
-    display: -ms-grid;
-    display: -moz-grid;
-
-    grid-template-columns: auto;
-    grid-template-rows: repeat(3, auto);
-
-    justify-content: center;
-    align-content: center;
-    row-gap: 1rem;
-
     text-align: center;
-
     color: white;
-
-    padding: 2rem;
+    margin: auto;
 }
-.swiper-landing-new .swiper-slide > div > div{
-    /* border: 2px solid black; */
-}
-.swiper-landing-new .swiper-slide > div > img{
-    display: block;
-    width: 100vw;
-    height: 100%;
-    height:70vh;
-    object-fit: cover;
 
-    /* border-radius: 1rem; */
+.swiper-landing-new .swiper-slide .swiper-content h1{
+    font-weight: 500;
+    font-size:3rem;
 }
 @media (max-width: 375px){
     .swiper-landing-new .swiper-slide > div{
         max-height: 60vh;
     }
-    .swiper-landing-new .swiper-slide > div > img{
-        height:70vh;
-    }
 }
+
 .swiper-landing{
     height: max-content;
     /* border: 3px solid black; */

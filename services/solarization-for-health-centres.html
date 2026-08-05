@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/global.css" type="text/css"/>
+    <link rel="stylesheet" href="../styles/navigation.css" type="text/css"/>
+    <link rel="stylesheet" href="../styles/sections.css" type="text/css"/>
+    <link rel="stylesheet" href="../styles/action-buttons.css" type="text/css"/>
+    <link rel="stylesheet" href="../styles/residential-solar-system-solutions.css" type="text/css"/>
+    <link rel="stylesheet" href="../scripts/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../styles/footer.css" type="text/css"/>
+
+    <title>Solar Panels for Technical Training Institutes | Power-Wiz Electro Limited</title>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="menu">
+            <div class="logo">
+                <!-- <div 
+                    class="menu-bars large-screen-menu-bars" 
+                    id="navigation-bars" 
+                    onclick="toggleNavigation(true)" >
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div> -->
+
+                <button class="menu-btn large-screen-menu-bars" id="menuBtn" onclick="toggleNavigation(true)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="../"><img class="power-wiz-logo" src="../assets/images/power-wiz electro limited logo.png" alt="power-wiz logo" /></a>
+            </div>
+            <ul class="menu-items">
+                <li class="our-services">
+                    <span class="dynamic-text">Our Services</span>
+                    <div>
+                        <ul class="our-services-container">
+                            <a href="./residential-solar-system-solutions.html">Residential Solar Systems Solutions</a>
+                            <a href="./commercial-solar-system-solutions.html">Commercial Solar System Solutions</a>
+
+                            <li style="margin-left: 3rem;">Solarization for:</li>
+                            <a href="./solar-panels-for-schools.html" class="sub-menu">Schools</a>
+                            <a href="./solar-panels-for-technical-training-institutes.html" class="sub-menu">TTIs</a>
+                            <a href="./solarization-for-health-centres.html" class="sub-menu">Health Centre under KCB Program</a>
+
+                            <li style="margin-left: 3rem;">Solar PV O&M Services</li>
+                            <a href="./solar-panel-cleaning-services.html" class="sub-menu">Solar Panel Cleaning Services</a>
+                            <a href="./solar-panels-routine-inspection-services.html" class="sub-menu">Routine Inspection</a>
+                            <a href="./solar-panels-performance-monitoring-services.html" class="sub-menu">Performance Monitoring</a>
+                            <a href="./solar-panels-preventative-and-corrective-services.html" class="sub-menu">Preventative and corrective services</a>
+
+                            <a href="./telecommunication-equipment-installation-and-maintenance.html">Telecommunication Equipment Installation and Maintenance</a>
+                            <a href="./fiber-optics-works.html">Fiber Optics Works</a>
+                            <a href="./supply-installation-and-maintenance-of-diesel-generators.html">Supply, Installation and Maintenance of Diesel Generators</a>
+                            <a href="./supply-and-implementation-of-power-lines-and-grid-extension-services.html">Supply and implementation of Power Lines and Grid Extension Services</a>
+                            <a href="./electrical-and-mechanical-works.html">Electrical and Mechanical Works</a>
+                            <a href="./full-turnkey-civil-works.html">Full Turnkey Civil Works</a>
+                            <a href="./water-infrustructure-implementation-and-supply-and-extension-projects.html">Water Infrustructure Implementation and Supply and Extension Projects</a>
+                        </ul>
+                    </div>
+                </li>
+                <a href="../our-projects.html" class="dynamic-text">Our Projects</a>
+                <a href="../our-partners.html" class="dynamic-text">Our Partners</a>
+                <a href="../about-us.html" class="dynamic-text">About Us</a>
+                <li class="our-services">
+                    <span class="dynamic-text">Resources</span>
+                    <div>
+                        <ul>
+                            <a href="../careers.html">Careers</a>
+                            <a href="../environmental-and-health-safety-at-work-policy.html">EHS Policy</a>
+                        </ul>
+                    </div>
+                </li>
+                <a class="dynamic-text" href="../contact-us.html" onclick="setFormSubject('RE: General Inquiry', 'Hello, \nHow I would like to inquire about\n')">Contact Us</a>
+            </ul>
+            <!-- <div 
+                class="menu-bars small-screen-menu-bars" 
+                id="navigation-bars" 
+                onclick="toggleNavigation(true)" >
+                <div></div>
+                <div></div>
+                <div></div>
+            </div> -->
+
+            <button class="menu-btn small-screen-menu-bars" id="menuBtn" onclick="toggleNavigation(true)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <script>
+                const menuBtns = document.getElementsByClassName("menu-btn");
+
+                for (let i = 0; i < menuBtns.length; i++) {
+                    const element = menuBtns[i];
+                    element.addEventListener("click", () => {
+                        element.classList.toggle("active");
+                    });
+                    
+                }
+            </script>
+        </div>
+        <div class="hamburger-menu">
+            <ul class="hamburger-menu-ul">
+                <li>
+                    <ul>
+                        <li class="navigation-submenu">
+                            <p>Our Services</p>
+                            <div class="underline"></div>
+                            <ul>
+                                <a href="./residential-solar-system-solutions.html">Residential Solar Systems Solutions</a>
+                                <a href="./commercial-solar-system-solutions.html">Commercial Solar System Solutions</a>
+                                <a href="./telecommunication-equipment-installation-and-maintenance.html">Telecommunication Equipment Installation and Maintenance</a>
+                                <a href="./fiber-optics-works.html">Fiber Optics Works</a>
+                                <a href="./supply-installation-and-maintenance-of-diesel-generators.html">Supply, Installation and Maintenance of Diesel Generators</a>
+                                <a href="./supply-and-implementation-of-power-lines-and-grid-extension-services.html">Supply and implementation of Power Lines and Grid Extension Services</a>
+                                <a href="./electrical-and-mechanical-works.html">Electrical and Mechanical Works</a>
+                                <a href="./full-turnkey-civil-works.html">Full Turnkey Civil Works</a>
+                                <a href="./water-infrustructure-implementation-and-supply-and-extension-projects.html">Water Infrustructure Implementation and Supply and Extension Projects</a>
+                            </ul>
+                        </li>
+                        <li class="navigation-submenu">
+                            <p>Solar PV O&M Services</p>
+                            <div class="underline"></div>
+                            <ul>
+                                <a href="./solar-panel-cleaning-services.html" class="sub-menu">Solar Panel Cleaning Services</a>
+                                <a href="./solar-panels-routine-inspection-services.html" class="sub-menu">Routine Inspection</a>
+                                <a href="./solar-panels-performance-monitoring-services.html" class="sub-menu">Performance Monitoring</a>
+                                <a href="./solar-panels-preventative-and-corrective-services.html" class="sub-menu">Preventative and corrective services</a>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li>
+                    <ul>
+                        <li class="navigation-submenu">
+                            <p>Resources</p>
+                            <div class="underline"></div>
+                            <ul>
+                                <a href="../careers.html">Careers</a>
+                                <a href="../environmental-and-health-safety-at-work-policy.html">EHS Policy</a>
+                            </ul>
+                        </li>
+                        <li class="navigation-submenu">
+                            <p>Solarization for</p>
+                            <div class="underline"></div>
+                            <ul>
+                                <a href="./solar-panels-for-schools.html" class="sub-menu">Schools</a>
+                                <a href="./solar-panels-for-technical-training-institutes.html" class="sub-menu">TTIs</a>
+                                <a href="./solarization-for-health-centres.html" class="sub-menu">Health Centre under KCB Program</a>
+                            </ul>
+                        </li>
+                        <li style="margin-top:2rem;">
+                            <ul>
+                                <a href="../our-projects.html">Our Projects</a>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <a href="../our-partners.html">Our Partners</a>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <a href="../about-us.html">About Us</a>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <a href="../contact-us.html" onclick="setFormSubject('RE: General Inquiry', 'Hello, \nHow I would like to inquire about\n')">Contact Us</a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navigation" style="position:relative;visibility:hidden; display: none;">
+        <div class="menu">
+            <div class="logo">
+                <div 
+                    class="menu-bars large-screen-menu-bars" 
+                    id="navigation-bars" 
+                    onclick="toggleNavigation(true)" >
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <a href="/"><img class="power-wiz-logo" src="./assets/images/power-wiz electro limited logo.png" alt="power-wiz logo" /></a>
+            </div>
+            <ul class="menu-items">
+                <li class="our-services">
+                    <span>Our Services</span>
+                    <div>
+                        <ul>
+                            <a href="#">Residential Solar Panels</a>
+                            <a href="#">Commercial Solar Panels</a>
+                            <a href="#">Commercial Solar Panels</a>
+                            <a href="#">Commercial Solar Panels</a>
+                            <!-- <a href="#">Commercial Solar Panels</a> -->
+                        </ul>
+                    </div>
+                </li>
+                <a href="#">Our Projects</a>
+                <a href="#">Our Partners</a>
+                <a href="#">About Us</a>
+                <a href="#">Resources</a>
+                <a href="#">Contact Us</a>
+            </ul>
+            <div
+                    class="menu-bars small-screen-menu-bars" 
+                    id="navigation-bars" 
+                    onclick="toggleNavigation(true)" >
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="content-right landing">
+            <div>
+                <img class="landing-image" src="../assets/commercial-solar-systems/WhatsApp Image 2024-06-10 at 09.29.42.jpeg" alt="residential solar panel mounted on a roof by power-wiz electro limited" />
+            </div>
+            <div class="section-content">
+                <h1>Solar Panels for Health Centres</h1>
+                <div class="underline"></div>
+                <p>
+                    Reliable electricity is one of the most important requirements for any health centre. From vaccine refrigeration and laboratory testing to patient care and medical record management, healthcare facilities depend on continuous power to deliver quality services.
+                </p>
+                <div class="action-buttons">
+                    <a href="../contact-us.html" class="get-quote-button box-shadow" onclick="setFormSubject('RE: Commercial Solar System Solutions', 'Hello, \nI would like to inquire about your Commercial Solar System Solutions.\n')">GET QUOTE</a>
+                    <a href="../contact-us.html" class="contact-us-button box-shadow" onclick="setFormSubject('RE: Commercial Solar System Solutions', 'Hello, \nI would like to inquire about your Commercial Solar System Solutions.\n')">CONTACT US</a>
+                </div>
+            </div>
+        </section>
+        <section class="content-left about-residential-solar-systems">
+            <div>
+                <img class="commercial-solar-panel-installation-image" src="../assets/commercial-solar-systems/WhatsApp Image 2024-06-10 at 09.29.32.jpeg" alt="residential solar panel system mounted on a roof by power-wiz electro limited" />
+            </div>
+            <div class="section-content">
+                <div class="underline"></div>
+                <p>
+                    Unfortunately, many health centres experience frequent power outages, rising electricity costs, and unreliable grid connections. These challenges can affect patient care, disrupt critical medical services, and increase operating expenses.
+                </p>
+                <p>
+                    Solar panels provide a dependable and cost-effective solution. By harnessing energy from the sun, health centres can generate their own electricity, reduce dependence on the national grid, lower energy costs, and ensure uninterrupted operation of critical healthcare services.
+                </p>
+            </div>
+        </section>
+        <section class="content-right about-residential-solar-systems">
+            <div>
+                <img class="commercial-solar-panel-installation-image" src="../assets/commercial-solar-systems/WhatsApp Image 2024-06-10 at 09.29.34.jpeg" alt="residential solar panel system mounted on a roof by power-wiz electro limited" />
+            </div>
+            <div class="section-content">
+                <div class="underline"></div>
+                <p>
+                    Whether you operate a dispensary, clinic, maternity centre, health centre, mission hospital, or private healthcare facility, investing in solar energy can improve service delivery while reducing long-term operational costs.
+                </p>
+            </div>
+        </section>
+
+        <section class="article">
+            <h2>Why Health Centres Need Solar Panels</h2>
+            <div class="underline"></div>
+            <p>Healthcare facilities cannot afford interruptions in power supply. Even a short outage can impact patient care, damage sensitive medical equipment, and compromise the storage of vaccines and medicines.</p>
+            <ul>
+                <li>
+                    <h3>Frequent Power Outages</h3>
+                    <p>Power interruptions can affect:</p>
+                    <ul>
+                        <li>Laboratory testing</li>
+                        <li>Emergency services</li>
+                        <li>Patient consultations</li>
+                        <li>Medical equipment operation</li>
+                        <li>Vaccine refrigeration</li>
+                        <li>Communication systems</li>
+                        <li>Electronic medical records</li>
+                    </ul>
+                    <p>A properly designed solar power system helps ensure these critical services remain operational even when grid electricity fails.</p>
+                </li>
+                <li>
+                    <h3>Rising Electricity Costs</h3>
+                    <p>Health centres consume electricity throughout the day and night. Lighting, computers, laboratory equipment, refrigeration units, internet systems, and medical devices contribute to significant electricity bills.</p>
+                    <p>Solar panels allow facilities to generate their own electricity, reducing monthly utility costs and providing long-term financial savings.</p>
+                </li>
+                <li>
+                    <h3>Remote and Rural Locations</h3>
+                    <p>Many health centres operate in areas with unreliable grid connections or no grid access at all. Solar power provides an independent source of electricity, enabling healthcare services to continue regardless of location.</p>
+                </li>
+                <li>
+                    <h3>Reduced Dependence on Generators</h3>
+                    <p>Many facilities rely on diesel generators during power outages. While generators provide backup power, they are costly to operate and require ongoing fuel purchases and maintenance.</p>
+                    <p>Solar energy can significantly reduce generator usage, resulting in lower operating costs and improved environmental sustainability.</p>
+                </li>
+            </ul>
+            <div class="action-buttons">
+                <a href="../contact-us.html" class="get-quote-button box-shadow" onclick="setFormSubject('RE: Commercial Solar System Solutions', 'Hello, \nI would like to inquire about your Commercial Solar System Solutions.\n')">GET QUOTE</a>
+                <a href="../contact-us.html" class="contact-us-button box-shadow" onclick="setFormSubject('RE: Commercial Solar System Solutions', 'Hello, \nI would like to inquire about your Commercial Solar System Solutions.\n')">CONTACT US</a>
+            </div>
+        </section>
+
+        <section class="content-right landing">
+            <div>
+                <img class="landing-image" src="../assets/commercial-solar-systems/WhatsApp Image 2024-06-10 at 09.29.35.jpeg" alt="residential solar panel mounted on a roof by power-wiz electro limited" />
+            </div>
+            <div class="section-content">
+                <h2>Benefits of Solar Panels for Health Centres</h2>
+                <div class="underline"></div>
+                
+                <ul>
+                    <li>
+                        <h3>Reliable Power for Critical Healthcare Services</h3>
+                        <p>Solar systems with battery storage provide continuous power for essential services, ensuring healthcare professionals can focus on patient care without worrying about power interruptions.</p>
+                    </li>
+                    <li>
+                        <h3>Protection of Vaccines and Medicines</h3>
+                        <p>Vaccines and certain medications must be stored within specific temperature ranges. </p>
+                        <p>Solar-powered refrigeration helps maintain the cold chain required for: Vaccines, Blood products, Temperature-sensitive medications, Laboratory samples</p>
+                    </li>
+                    <li>
+                        <h3>Reduced Operating Costs</h3>
+                        <p>Solar energy reduces dependence on utility providers and helps lower monthly expenses.</p>
+                    </li>
+                    <li>
+                        <h3>Improved Patient Care</h3>
+                        <p>Reliable electricity supports faster diagnoses, uninterrupted treatment, and better overall healthcare outcomes. Healthcare professionals can continue providing services without delays caused by power interruptions.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="content-left about-residential-solar-systems">
+            <div>
+                <img class="commercial-solar-panel-installation-image" src="../assets/commercial-solar-systems/WhatsApp Image 2024-06-10 at 09.29.36.jpeg" alt="residential solar panel system mounted on a roof by power-wiz electro limited" />
+            </div>
+            <div class="section-content">
+                <h2>Applications of Solar Energy in Health Centres</h2>
+                <div class="underline"></div>
+                <p>Solar power systems can support a wide range of healthcare operations.</p>
+                <ul>
+                    <li>
+                        <strong>Consultation Rooms</strong><br />
+                        <p>Solar energy provides reliable lighting and power for computers, diagnostic tools, and communication equipment.</p>
+                    </li>
+                    <li>
+                        <strong>Maternity Wards</strong><br />
+                        <p>Continuous electricity is essential for maternity services, particularly during nighttime deliveries and emergency procedures.</p>
+                    </li>
+                    <li>
+                        <strong>Laboratories</strong><br />
+                        <p>Laboratories require stable electricity for testing equipment, sample processing, and diagnostic procedures.</p>
+                    </li>
+                    <li>
+                        <strong>Vaccine Refrigeration</strong><br />
+                        <p>Solar-powered refrigeration systems help maintain vaccine effectiveness and support immunization programs.</p>
+                    </li>
+                    <li>
+                        <strong>Pharmacy Storage</strong><br />
+                        <p>Many medications require temperature-controlled storage conditions that can be maintained using solar energy.</p>
+                    </li>
+                    <li>
+                        <strong>Administration Offices</strong><br />
+                        <p>Computers, printers, internet equipment, and electronic patient record systems can operate reliably using solar power.</p>
+                    </li>
+                    <li>
+                        <strong>Security Lighting</strong><br />
+                        <p>Solar-powered lighting improves security around healthcare facilities while reducing energy costs.</p>
+                    </li>
+                    <li>
+                        <strong>Water Pumping Systems</strong><br />
+                        <p>Health centres often require reliable water supplies for sanitation, cleaning, and patient care. Solar-powered water pumps provide an efficient and sustainable solution.</p>
+                    </li>
+                    <li>
+                        <strong>Internet and Communication Systems</strong><br />
+                        <p>Reliable internet access and communication equipment are essential for modern healthcare operations, telemedicine services, and patient record management.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="content-right landing">
+            <div>
+                <img class="landing-image" src="../assets/commercial-solar-systems/WhatsApp Image 2024-06-10 at 09.29.37.jpeg" alt="residential solar panel mounted on a roof by power-wiz electro limited" />
+            </div>
+            <div class="section-content">
+                <h2>Components of a Solar Panels for Health Centres</h2>
+                <div class="underline"></div>
+                <p>A complete healthcare solar solution typically includes several important components.</p>
+                <ul>
+                    <li>
+                        <h3>Solar Panels</h3>
+                        <p>Solar panels convert sunlight into electricity and form the foundation of the system.</p>
+                    </li>
+                    <li>
+                        <h3>Hybrid or Solar Inverters</h3>
+                        <p>Inverters convert solar-generated electricity into usable power for healthcare equipment and facility operations.</p>
+                    </li>
+                    <li>
+                        <h3>Battery Storage Systems</h3>
+                        <p>Batteries store excess energy for use during evenings, cloudy periods, and power outages.</p>
+                    </li>
+                    <li>
+                        <h3>Monitoring Systems</h3>
+                        <p>Monitoring software allows facility managers to track system performance and energy production in real time.</p>
+                    </li>
+                    <li>
+                        <h3>Mounting Structures</h3>
+                        <p>Durable mounting systems securely support solar panels and ensure maximum sunlight exposure.</p>
+                    </li>
+                    <li>
+                        <h3>Electrical Protection Equipment</h3>
+                        <p>Protective devices help safeguard the solar system and connected medical equipment.</p>
+                    </li>
+                </ul>
+                <div class="action-buttons">
+                    <a href="../contact-us.html" class="get-quote-button box-shadow" onclick="setFormSubject('RE: Commercial Solar System Solutions', 'Hello, \nI would like to inquire about your Commercial Solar System Solutions.\n')">GET QUOTE</a>
+                    <a href="../contact-us.html" class="contact-us-button box-shadow" onclick="setFormSubject('RE: Commercial Solar System Solutions', 'Hello, \nI would like to inquire about your Commercial Solar System Solutions.\n')">CONTACT US</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-left landing">
+            <div>
+                <img class="landing-image" src="../assets/commercial-solar-systems/WhatsApp Image 2024-06-10 at 09.29.38.jpeg" alt="residential solar panel mounted on a roof by power-wiz electro limited" />
+            </div>
+            <div class="section-content">
+                <h2>Why Choose Our Solar Installation Services for Health Centres</h2>
+                <div class="underline"></div>
+                <p>Selecting the right solar partner is just as important as selecting the right equipment</p>
+                <ul>
+                    <li>
+                        <h3>Professional Site Assessment</h3>
+                        <p>Our team evaluates: Daily energy consumption, Medical equipment requirements, Facility expansion plans and Available installation space. This allows us to design a solution that meets your specific needs.</p>
+                    </li>
+                    <li>
+                        <h3>High-Quality Solar Equipment</h3>
+                        <p>We use reliable solar panels, inverters, batteries, and protection systems designed for long-term performance and durability.</p>
+                    </li>
+                    <li>
+                        <h3>Customized Solutions</h3>
+                        <p>No two healthcare facilities are identical. We design systems tailored to your energy requirements, operational goals, and budget.</p>
+                    </li>
+                    <li>
+                        <h3>Expert Installation</h3>
+                        <p>Our experienced technicians ensure installations meet industry standards and deliver maximum performance.</p>
+                    </li>
+                    <li>
+                        <h3>After-Sales Support</h3>
+                        <p>We provide ongoing support, maintenance guidance, and technical assistance to keep your solar system operating efficiently for years to come.</p>
+                    </li>
+                    <li>
+                        <h3>Long-Term Reliability</h3>
+                        <p>Our goal is to provide dependable energy solutions that support uninterrupted healthcare services and deliver lasting value.</p>
+                    </li>
+                </ul>
+                <div class="action-buttons">
+                    <a href="../contact-us.html" class="get-quote-button box-shadow" onclick="setFormSubject('RE: Commercial Solar System Solutions', 'Hello, \nI would like to inquire about your Commercial Solar System Solutions.\n')">GET QUOTE</a>
+                    <a href="../contact-us.html" class="contact-us-button box-shadow" onclick="setFormSubject('RE: Commercial Solar System Solutions', 'Hello, \nI would like to inquire about your Commercial Solar System Solutions.\n')">CONTACT US</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-right landing">
+            <div>
+                <img class="landing-image" src="../assets/commercial-solar-systems/WhatsApp Image 2024-06-10 at 09.29.39.jpeg" alt="residential solar panel mounted on a roof by power-wiz electro limited" />
+            </div>
+            <div class="section-content">
+                <h2>Return on Investment of Solar Panels for Health Centres</h2>
+                <div class="underline"></div>
+                <p>Solar energy provides both financial and operational benefits.</p>
+                <h3>Financial Benefits</h3>
+                <ul>
+                    <li>Reduced electricity bills</li>
+                    <li>Lower fuel expenses</li>
+                    <li>Reduced generator maintenance costs</li>
+                    <li>Protection from rising energy prices</li>
+                </ul>
+                <h3>Operational Benefits</h3>
+                <ul>
+                    <li>Improved service reliability</li>
+                    <li>Enhanced patient care</li>
+                    <li>Better protection of vaccines and medicines</li>
+                    <li>Increased equipment uptime</li>
+                    <li>Reduced service interruptions</li>
+                </ul>
+                <p>Because solar panels typically last 25 years or more, health centres can continue benefiting from energy savings for decades after installation.</p>
+                <div class="action-buttons">
+                    <a href="../contact-us.html" class="get-quote-button box-shadow" onclick="setFormSubject('RE: Commercial Solar System Solutions', 'Hello, \nI would like to inquire about your Commercial Solar System Solutions.\n')">GET QUOTE</a>
+                    <a href="../contact-us.html" class="contact-us-button box-shadow" onclick="setFormSubject('RE: Commercial Solar System Solutions', 'Hello, \nI would like to inquire about your Commercial Solar System Solutions.\n')">CONTACT US</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-left landing">
+            <div>
+                <img class="landing-image" src="../assets/commercial-solar-systems/WhatsApp Image 2024-06-10 at 09.29.40.jpeg" alt="residential solar panel mounted on a roof by power-wiz electro limited" />
+            </div>
+            <div class="section-content">
+                <h2>Solar Panels for Rural Health Centres</h2>
+                <div class="underline"></div>
+                <p>Rural health centres often face the greatest challenges when it comes to reliable electricity. Distance from the grid, poor infrastructure, and frequent outages can affect healthcare delivery.</p>
+                <p>Solar energy offers a practical and sustainable solution by providing independent power generation directly at the facility.</p>
+                <p>With solar power, rural health centres can:</p>
+                <ul>
+                    <li>Improve healthcare access</li>
+                    <li>Protect vaccine supplies</li>
+                    <li>Operate medical equipment reliably</li>
+                    <li>Reduce generator dependence</li>
+                    <li>Deliver better patient outcomes</li>
+                </ul>
+                <div class="action-buttons">
+                    <a href="../contact-us.html" class="get-quote-button box-shadow" onclick="setFormSubject('RE: Commercial Solar System Solutions', 'Hello, \nI would like to inquire about your Commercial Solar System Solutions.\n')">GET QUOTE</a>
+                    <a href="../contact-us.html" class="contact-us-button box-shadow" onclick="setFormSubject('RE: Commercial Solar System Solutions', 'Hello, \nI would like to inquire about your Commercial Solar System Solutions.\n')">CONTACT US</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-right landing">
+            <div>
+                <img class="landing-image" src="../assets/commercial-solar-systems/WhatsApp Image 2024-06-10 at 09.29.41.jpeg" alt="residential solar panel mounted on a roof by power-wiz electro limited" />
+            </div>
+            <div class="section-content">
+                <h2>How to Choose the Right Solar Installer</h2>
+                <div class="underline"></div>
+                <p>Selecting a qualified solar installer is essential for maximizing system performance and reliability.</p>
+                <p>Consider the following factors:</p>
+                <h3>Factors Affecting Installation Costs</h3>
+                <ul>
+                    <li>
+                        <h3>Experience</h3>
+                        <p>Choose a company with proven experience in commercial and educational solar installations.</p>
+                    </li>
+                    <li>
+                        <h3>Licensing and Certification</h3>
+                        <p>Ensure the installer meets all applicable regulatory and industry requirements.</p>
+                    </li>
+                    <li>
+                        <h3>Warranty Coverage</h3>
+                        <p>Reliable installers provide warranties on both equipment and workmanship.</p>
+                    </li>
+                    <li>
+                        <h3>After-Sales Support</h3>
+                        <p>Ongoing maintenance and technical support are critical for long-term system performance.</p>
+                    </li>
+                    <li>
+                        <h3>Monitoring and Maintenance Services</h3>
+                        <p>Professional monitoring helps identify issues early and maximize energy production.</p>
+                    </li>
+                </ul>
+                <div class="action-buttons">
+                    <a href="../contact-us.html" class="get-quote-button box-shadow" onclick="setFormSubject('RE: Commercial Solar System Solutions', 'Hello, \nI would like to inquire about your Commercial Solar System Solutions.\n')">GET QUOTE</a>
+                    <a href="../contact-us.html" class="contact-us-button box-shadow" onclick="setFormSubject('RE: Commercial Solar System Solutions', 'Hello, \nI would like to inquire about your Commercial Solar System Solutions.\n')">CONTACT US</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="completed-projects-title">
+            <h2>Completed Projects</h2>
+            <div class="underline"></div>
+        </div>
+        <section class="completed-projects">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <!-- <div class="swiper-slide small landing_logo">
+                        <img id="landing_logo"src="./icons/solar prime logo.png" alt = "solar prime logo" />
+                    </div> -->
+                    <div class="swiper-slide"><img class="project-image" src="../assets/commercial-solar-systems/WhatsApp Image 2024-06-10 at 09.29.39.jpeg" alt="commercial solar panel by power-wiz electro limited" /></div>
+                    <div class="swiper-slide"><img class="project-image" src="../assets/commercial-solar-systems/WhatsApp Image 2024-06-10 at 09.29.40.jpeg" alt="commercial solar panel by power-wiz electro limited" /></div>
+                    <div class="swiper-slide"><img class="project-image" src="../assets/commercial-solar-systems/WhatsApp Image 2024-06-10 at 09.29.41.jpeg" alt="commercial solar panel by power-wiz electro limited" /></div>
+                    <div class="swiper-slide"><img class="project-image" src="../assets/commercial-solar-systems/WhatsApp Image 2024-06-10 at 09.29.42.jpeg" alt="commercial solar panel by power-wiz electro limited" /></div>
+                    <div class="swiper-slide"><img class="project-image" src="../assets/commercial-solar-systems/WhatsApp Image 2024-06-10 at 09.29.43.jpeg" alt="commercial solar panel by power-wiz electro limited" /></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+            
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </section>
+        <section class="article">
+            <h2>Frequently Asked Questions</h2>
+            <div class="underline"></div>
+            <ul>
+                <li>
+                    <h3>How much does a solar system cost for a health centre?</h3>
+                    <p>The cost depends on energy consumption, system size, battery storage requirements, and facility needs. A professional site assessment provides the most accurate estimate.</p>
+                </li>
+                <li>
+                    <h3>Can solar panels power vaccine refrigerators?</h3>
+                    <p>Yes. Solar systems are commonly used to power vaccine refrigeration units and maintain cold-chain requirements.</p>
+                </li>
+                <li>
+                    <h3>What size solar system does a clinic need?</h3>
+                    <p>Most clinics require systems ranging from 5kW to 20kW, depending on equipment and daily electricity usage.</p>
+                </li>
+                <li>
+                    <h3>Can a health centre operate entirely on solar power?</h3>
+                    <p>Many health centres can operate primarily on solar energy when equipped with appropriately sized battery storage systems.</p>
+                </li>
+                <li>
+                    <h3>Do solar panels require maintenance?</h3>
+                    <p>Solar systems require periodic inspections, cleaning, and performance monitoring to maintain efficiency.</p>
+                </li>
+                <li>
+                    <h3>How long do solar panels last?</h3>
+                    <p>Most high-quality solar panels have a lifespan of 25 to 30 years.</p>
+                </li>
+                <li>
+                    <h3>Do solar systems require maintenance?</h3>
+                    <p>Solar systems require minimal maintenance, including periodic cleaning and routine inspections.</p>
+                </li>
+                <li>
+                    <h3>Can solar reduce generator fuel costs?</h3>
+                    <p>Yes. Solar energy can significantly reduce generator usage, lowering fuel and maintenance expenses.</p>
+                </li>
+            </ul>
+            <div class="action-buttons">
+                <a href="../contact-us.html" class="get-quote-button box-shadow" onclick="setFormSubject('RE: Commercial Solar System Solutions', 'Hello, \nI would like to inquire about your Commercial Solar System Solutions.\n')">GET QUOTE</a>
+                <a href="../contact-us.html" class="contact-us-button box-shadow" onclick="setFormSubject('RE: Commercial Solar System Solutions', 'Hello, \nI would like to inquire about your Commercial Solar System Solutions.\n')">CONTACT US</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-socials">
+            <a href="#"><img src="../assets/icons/whatsapp.PNG" alt="whatsapp icon" /></a>
+            <a href="#"><img src="../assets/icons/twitter.png" alt="twitter icon" /></a>
+            <a href="#"><img src="../assets/icons/facebook.png" alt="facebook icon" /></a>
+            <a href="#"><img src="../assets/icons/instagram.png" alt="instagram icon" /></a>
+        </div>
+        <div class="footer-content">
+            <div class="company-info">
+                <img src="../assets/images/power wiz logo with white outline.png" alt="power wiz logo" />
+                <p>
+                    Power-Wiz Electro Limited
+                </p>
+                <p>
+                    Dul Dul ph 1 Business complex, <br />
+                    Block A 1st Floor, <br />
+                    Cabanas - Mombasa Road, <br />
+                    Behind Tuff steel
+                </p>
+            </div>
+            <div class="important-links">
+                <h4>Important Links</h4>
+                <div class="underline"></div>
+                <ul>
+                    <a href="/">Homepage</a>
+                    <a href="/our-projects.html">Our Projects</a>
+                    <a href="/about-us.html">About Us</a>
+                    <a href="/contact-us.html">Contact Us</a>
+                    <a href="/resources.html">Resources</a>
+                </ul>
+            </div>
+            <div class="important-links">
+                <h4>Our Services</h4>
+                <div class="underline"></div>
+                <ul>
+                    <a href="./residential-solar-system-solutions.html">Residential Solar Systems Solutions</a>
+                    <a href="./commercial-solar-system-solutions.html">Commercial Solar System Solutions</a>
+                    <a href="./telecommunication-equipment-installation-and-maintenance.html">Telecommunication Equipment Installation and Maintenance</a>
+                    <a href="./fiber-optics-works.html">Fiber Optics Works</a>
+                    <a href="./supply-installation-and-maintenance-of-diesel-generators.html">Supply, Installation and Maintenance of Diesel Generators</a>
+                    <a href="./supply-and-implementation-of-power-lines-and-grid-extension-services.html">Supply and implementation of Power Lines and Grid Extension Services</a>
+                    <a href="./electrical-and-mechanical-works.html">Electrical and Mechanical Works</a>
+                    <a href="./full-turnkey-civil-works.html">Full Turnkey Civil Works</a>
+                    <a href="./water-infrustructure-implementation-and-supply-and-extension-projects.html">Water Infrustructure Implementation and Supply and Extension Projects</a>
+                </ul>
+            </div>
+            <div class="company-contacts">
+                <img src="../assets/images/call icon.png" alt="call icon" />
+                <ul>
+                    <a href="tel: +254711864489">+254711864489</a>
+                    <a href="tel: +254727615311">+254727615311</a>
+                    <a href="tel: +254724842713">+254724842713</a>
+                </ul>
+                <img src="./assets/images/mail icon.png" alt="mail icon" />
+                <ul>
+                    <a href="mailto:info@power-wiz.co.ke">info@power-wiz.co.ke</a>
+                </ul>
+                <!-- <img src="./assets/images/web icon.png" alt="website icon" />
+                <ul>
+                    <a href="https://www.power-wiz.co.ke">www.power-wiz.co.ke</a>
+                </ul> -->
+            </div>
+        </div>
+        <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. Maintained by <a href="https://yosambranding.art">Yosam Branding</a></p>
+    </footer>
+    <script src="../scripts/navigation.js"></script>
+    <script src = "../scripts/swiper/swiper-bundle.min.js"></script>
+    <script src = "../scripts/swiper/initialize-swiper.js"></script>
+    <script src="../scripts/get-quote.js"></script>
+</body>
+</html>
