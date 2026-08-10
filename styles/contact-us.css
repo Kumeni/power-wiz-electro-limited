@@ -17,9 +17,14 @@
 }
 
 .company-contact-information{
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
     margin-top:4rem;
     row-gap: 2rem;
+}
+
+.company-contact-information table tr td{
+    padding: 0.2rem 1rem;
+    text-align: left;
 }
 @media (max-width: 768px){
     .company-contact-information{

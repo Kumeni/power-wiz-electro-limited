@@ -39,3 +39,11 @@ main{
         left: -7rem;
     }
 }
+
+.embeded-policy{
+    width:95%;
+    max-width: 900px;
+    height: 100vh;
+    display: block;
+    margin: 3rem auto;
+}
