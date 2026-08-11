@@ -22,18 +22,15 @@
     row-gap: 2rem;
 }
 
-<<<<<<< HEAD
 .company-contact-information table tr td{
     padding: 0.2rem 1rem;
     text-align: left;
 }
-=======
 .contact-numbers{
     display: grid;
     row-gap: 0.5rem;
 }
 
->>>>>>> 3de2819f5dcc6cba1c1bce6e5deb148480c12da3
 @media (max-width: 768px){
     .company-contact-information{
         grid-template-columns: repeat(2, auto);
@@ -141,4 +138,14 @@
 .submit-button:hover{
     background-color: #25963f;
     cursor: pointer;
+}
+
+.map{
+    width: 90vw;
+    min-height: 400px;
+    margin: auto;
+}
+
+.map iframe{
+    width: 100%;
 }
